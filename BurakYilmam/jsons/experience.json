@@ -1,0 +1,75 @@
+{
+    "tr": {
+        "experiences": [
+            {
+                "startDate": "Şubat 2024",
+                "endDate": "Nisan 2026",
+                "company": "BLS Birleşik Lastik",
+                "position": "Yazılım Geliştirici",
+                "description": "Mevcut kurumsal ERP sistemi (Conzept16)’yı analiz ederek, C#, DevExpress, DevExpress XPO ve MSSQL teknolojileri ile kurumsal ihtiyaçlara uygun, modüler bir ERP sistemini sıfırdan geliştirdim.\n\nERP sistemi kapsamında yeni modüller tasarladım ve geliştirdim.\n\nVeri modelleme süreçlerini tasarladım ve veritabanı yönetimini gerçekleştirdim.\n\nİş süreçlerini dijitalleştirerek operasyonel verimliliği artıran çözümler geliştirdim.\n\nSistem üzerinde oluşan hataları analiz ederek sürdürülebilir ve kalıcı çözümler ürettim.\n\nConzept16 üzerinde iyileştirme, bakım ve optimizasyon çalışmaları gerçekleştirdim.",
+                "current": true
+            },
+            {
+                "startDate": "Şubat 2022",
+                "endDate": "Şubat 2023",
+                "company": "Milli Savunma Bakanlığı Teknik Hizmet Genel Müdürlüğü",
+                "position": "Yedek Subay - Proje Sorumlusu",
+                "description": "HAVELSAN tarafından geliştirilen DOKU sistemi üzerinden NATO envanterine veri girişi ve kontrol işlemlerini gerçekleştirdim.\n\nSistem üzerinde tespit edilen hataları analiz ederek ilgili ekiplere raporladım.",
+                "current": false
+            },
+            {
+                "startDate": "Mayıs 2021",
+                "endDate": "Temmuz 2021",
+                "company": "Yeni Nesil Yazılım Teknolojileri",
+                "position": "Yazılım Stajyeri",
+                "description": "Java, JSF, HTML ve CSS kullanarak web projelerinde geliştirme süreçlerine katkı sağladım.\n\nC# ve MSSQL ile veri tabanı destekli uygulamalar geliştirdim.",
+                "current": false
+            },
+            {
+                "startDate": "Temmuz 2019",
+                "endDate": "Ağustos 2019",
+                "company": "Bursa Büyükşehir Belediyesi",
+                "position": "Donanım Stajyeri",
+                "description": "Donanım arıza tespiti, güvenlik kameraları kurulumu ve bilgisayar kurulum süreçlerinde görev aldım.",
+                "current": false
+            }
+        ]
+    },
+
+    "en": {
+        "experiences": [
+            {
+                "startDate": "February 2024",
+                "endDate": "April 2026",
+                "company": "BLS Birleşik Lastik",
+                "position": "Software Developer",
+                "description": "Analyzed the existing enterprise ERP system (Conzept16) and developed a modular ERP system from scratch using C#, DevExpress, DevExpress XPO, and MSSQL technologies to meet enterprise requirements.\n\nDesigned and developed new modules within the ERP system.\n\nDesigned data modeling processes and managed database operations.\n\nDeveloped solutions that improved operational efficiency by digitizing business processes.\n\nAnalyzed system errors and implemented sustainable and permanent solutions.\n\nPerformed improvement, maintenance, and optimization activities on Conzept16.",
+                "current": true
+            },
+            {
+                "startDate": "February 2022",
+                "endDate": "February 2023",
+                "company": "Ministry of National Defense - General Directorate of Technical Services",
+                "position": "Reserve Officer - Project Officer",
+                "description": "Performed data entry and verification operations for NATO inventory through the DOKU system developed by HAVELSAN.\n\nAnalyzed errors identified in the system and reported them to the relevant teams.",
+                "current": false
+            },
+            {
+                "startDate": "May 2021",
+                "endDate": "July 2021",
+                "company": "Yeni Nesil Yazılım Teknolojileri",
+                "position": "Software Development Intern",
+                "description": "Contributed to web development processes using Java, JSF, HTML, and CSS.\n\nDeveloped database-supported applications using C# and MSSQL.",
+                "current": false
+            },
+            {
+                "startDate": "July 2019",
+                "endDate": "August 2019",
+                "company": "Bursa Metropolitan Municipality",
+                "position": "Hardware Intern",
+                "description": "Worked on hardware troubleshooting, security camera installations, and computer setup processes.",
+                "current": false
+            }
+        ]
+    }
+}

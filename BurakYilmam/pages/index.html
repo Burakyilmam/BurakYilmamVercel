@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/summary.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/experience.css">
+    <link rel="stylesheet" href="/css/education.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/certificates.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/projects.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <div class="nav-menu" id="navMenu">
+
+                <a href="#summary" class="nav-item">
+                    <i class="fa-solid fa-user"></i>
+                    <span data-i18n="navbar.summary">Özet</span>
+                </a>
+
+                <a href="#about" class="nav-item">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span data-i18n="navbar.about">Hakkında</span>
+                </a>
+
+                <a href="#skills" class="nav-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span data-i18n="navbar.skills">Yetenekler</span>
+                </a>
+
+                <a href="#experience" class="nav-item">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span data-i18n="navbar.experience">Deneyim</span>
+                </a>
+
+                <a href="#education" class="nav-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span data-i18n="navbar.education">Eğitim</span>
+                </a>
+
+                <a href="#portfolio" class="nav-item">
+                    <i class="fa-solid fa-grip"></i>
+                    <span data-i18n="navbar.portfolio">Portföy</span>
+                </a>
+
+                <a href="#certificates" class="nav-item">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span data-i18n="navbar.certificates">Sertifikalar</span>
+                </a>
+
+                <a href="#contact" class="nav-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span data-i18n="navbar.contact">İletişim</span>
+                </a>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="language-switcher" id="languageToggle" type="button" aria-label="Dil değiştir">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span id="languageText">EN</span>
+
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menüyü aç" aria-expanded="false">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main class="content">
+
+        <section id="summary" class="summary-section">
+
+            <div class="summary-container">
+
+                <div class="summary-profile">
+
+                    <div class="profile-image">
+
+                        <img src="/images/profile.jpg" alt="Burak Yılmam">
+
+                    </div>
+
+                </div>
+
+                <div class="summary-content">
+
+                    <h1>
+                        <span id="summaryName">
+                            Burak Yılmam
+                        </span>
+                    </h1>
+
+                    <h2 data-i18n="summary.title">
+                        Bilgisayar Mühendisi
+                    </h2>
+
+                    <div class="summary-tech">
+                        <!-- Technologies will be loaded from JSON -->
+                    </div>
+
+                    <div class="contact-buttons">
+
+                        <a id="contactPhone" class="contact-btn phone" aria-label="Phone" title="Phone">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </a>
+
+
+                        <a id="contactWhatsapp" class="contact-btn whatsapp" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp" title="WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+
+                        <a id="contactInstagram" class="contact-btn instagram" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram" title="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+                        <a id="contactFacebook" class="contact-btn facebook" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook" title="Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+
+                        <a id="contactLinkedin" class="contact-btn linkedin" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn" title="LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </a>
+
+
+                        <a id="contactGithub" class="contact-btn github" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" title="GitHub">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+
+                        <!-- OUTLOOK -->
+
+                        <a id="contactOutlook" class="contact-btn outlook" aria-label="Outlook" title="Outlook">
+
+                            <img src="../icons/outlook.webp" alt="Outlook">
+
+                        </a>
+
+
+                        <!-- GMAIL -->
+
+                        <a id="contactGmail" class="contact-btn gmail" aria-label="Gmail" title="Gmail">
+
+                            <img src="../icons/gmail.webp" alt="Gmail">
+
+                        </a>
+
+                    </div>
+
+                    <a href="/folders/BurakYilmamCV.pdf" class="cv-btn" download>
+
+                        <i class="fa-solid fa-file-arrow-down"></i>
+
+                        <span data-i18n="summary.downloadCv">
+                            CV İndir
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="summary-stats">
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    <div>
+
+                        <strong id="statYears">
+                            0+
+                        </strong>
+
+                        <span data-i18n="summary.years">
+                            Yıl
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <div>
+
+                        <strong id="statTechnologies">
+                            0+
+                        </strong>
+
+                        <span data-i18n="summary.technologies">
+                            Teknoloji
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <div>
+
+                        <strong id="statCertificates">
+                            0+
+                        </strong>
+
+                        <span data-i18n="summary.certificates">
+                            Sertifika
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <div>
+
+                        <strong id="statProjects">
+                            0+
+                        </strong>
+
+                        <span data-i18n="summary.projects">
+                            Proje
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="section">
+
+            <div class="section-title">
+                <h2 data-i18n="sections.about">Hakkında</h2>
+            </div>
+
+            <div class="about-content">
+                <div id="aboutText"></div>
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SKILLS
+        ====================================================== -->
+
+        <section id="skills" class="section">
+
+            <h2 data-i18n="sections.skills">
+                Yetenekler
+            </h2>
+
+            <div id="skillsContainer" class="skills-container">
+
+                <!-- skills.json'dan doldurulacak -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EXPERIENCE
+        ====================================================== -->
+
+        <section id="experience" class="section">
+
+            <h2 data-i18n="sections.experience">
+                Deneyim
+            </h2>
+
+            <div id="experienceTimeline" class="experience-timeline">
+
+                <!-- experience.json'dan doldurulacak -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EDUCATION
+        ====================================================== -->
+
+        <section id="education" class="section">
+
+            <h2 data-i18n="sections.education">
+                Eğitim
+            </h2>
+
+            <div class="education-container" id="educationContainer">
+
+                <!-- education.json'dan doldurulacak -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PORTFOLIO
+        ====================================================== -->
+
+        <section id="portfolio" class="section">
+
+            <h2 data-i18n="sections.portfolio">
+                Portföy
+            </h2>
+
+            <div id="projects-container" class="projects-container">
+
+                <!-- Projeler JavaScript ile yüklenecek -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CERTIFICATES
+        ====================================================== -->
+
+        <section id="certificates" class="section">
+
+            <h2 data-i18n="sections.certificates">
+                Sertifikalar
+            </h2>
+
+            <div id="certificatesContainer" class="certificates-container">
+
+                <!-- certificates.json'dan doldurulacak -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+     CONTACT
+====================================================== -->
+
+        <section id="contact" class="section">
+
+            <h2 data-i18n="sections.contact">
+                İletişim
+            </h2>
+
+
+            <div id="contactContainer" class="contact-container">
+            </div>
+
+
+            <!-- =================================================
+         MAP
+    ================================================== -->
+
+            <div class="contact-map-container">
+
+                <div id="contactMap"></div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+         SCRIPTS
+    ====================================================== -->
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+        </script>
+
+        <script src="/js/navbar.js"></script>
+
+        <script src="/js/summary.js"></script>
+
+        <script src="/js/about.js"></script>
+
+        <script src="/js/skills.js"></script>
+
+        <script src="/js/experience.js"></script>
+
+        <script src="/js/education.js"></script>
+
+        <script src="/js/certificates.js"></script>
+
+        <script src="/js/contact.js"></script>
+
+        <script src="/js/projects.js"></script>
+
+</body>
+
+</html>

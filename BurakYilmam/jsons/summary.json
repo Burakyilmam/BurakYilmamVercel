@@ -1,0 +1,47 @@
+{
+    "name": "Burak Yılmam",
+
+    "contacts": {
+        "phone": "+90539438213",
+        "whatsapp": "https://wa.me/90539438213",
+        "instagram": "https://www.instagram.com/byilmam98/",
+        "facebook": "https://www.facebook.com/burakyilmamm/",
+        "linkedin": "https://www.linkedin.com/in/burak-yılmam-6a21191a7/",
+        "gitHub": "https://github.com/Burakyilmam",
+        "outlook": "burakyilmamm@hotmail.com",
+        "gmail": "burokylm@gmail.com"
+    },
+
+    "stats": {
+        "years": "2+",
+        "technologies": "15+",
+        "certificates": "10+",
+        "projects": "30+"
+    },
+
+    "technologies": [
+        "C#",
+        ".NET",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Bootstrap",
+        "MSSQL",
+        "DevExpress",
+        "eXpress Persistent Objects",
+        "Web API",
+        "MVC",
+        "PostgreSQL",
+        "Git/GitHub",
+        "Leaflet.js",
+        "Entity Framework"
+    ],
+
+    "tr": {
+        "title": "Bilgisayar Mühendisi"
+    },
+
+    "en": {
+        "title": "Computer Engineer"
+    }
+}

@@ -1,0 +1,291 @@
+{
+    "tr": {
+        "projects": [
+            {
+                "name": "Haritalı Hava Durumu ve Şehir Rehberi Uygulaması",
+                "description": "Türkiye'nin şehirlerini interaktif bir harita üzerinde keşfetmeye olanak sağlayan; hava durumu verilerinin yanı sıra şehirlerin tarihi, gezilecek yerleri, yöresel yemekleri, önemli kişileri ve ilçeleri hakkında bilgiler sunan modern bir web uygulamasıdır.",
+                "image": "https://github.com/user-attachments/assets/9746f233-bee4-4dca-9ea6-f8ccfd81fe17",
+                "github": "https://github.com/Burakyilmam/MapWeatherApp",
+                "url": ""
+            },
+            {
+                "name": "Entity Framework ERP Uygulaması",
+                "description": ".NET Framework ve DevExpress kullanılarak geliştirilen, katmanlı mimariye sahip masaüstü ERP uygulamasıdır.",
+                "image": "https://github.com/user-attachments/assets/cfb82d36-b514-46d6-a148-803d48117994",
+                "github": "https://github.com/Burakyilmam/ERP_EntityFramework",
+                "url": ""
+            },
+            {
+                "name": "IPT Uygulaması",
+                "description": ".NET Framework 4.7.2, DevExpress, XPO ve Microsoft SQL Server kullanılarak geliştirilen; proje ve iş süreçlerinin planlanması, görev durumlarının takibi ve süreç yönetimini sağlayan masaüstü uygulamasıdır.",
+                "image": "/images/IPT.png",
+                "github": "",
+                "url": ""
+            },
+            {
+                "name": "Manure",
+                "description": "Hayvanların büyüklüğüne ve beslenmesine göre dinamik gübre üretimi ekleyen bir RimWorld modudur. Gübrelerin kuruma süreci hava ve sıcaklıktan etkilenir; taze gübre kötü koku oluşturarak kolonistlerin ruh halini etkileyebilir. Kurutulmuş gübre yakıt ve chemfuel üretiminde, taze gübre ise tarım verimliliğini artıran zenginleştirilmiş toprak üretiminde kullanılabilir.",
+                "image": "https://images.steamusercontent.com/ugc/13018122490164990308/7639DDE006BA9852D5C307DC782ADEC5AEF8C1F7/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
+                "github": "https://github.com/Burakyilmam/Manure",
+                "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3784198780"
+            },
+            {
+                "name": "Basit ERP Uygulaması",
+                "description": ".NET Framework 4.7.2, DevExpress, Entity Framework, Microsoft SQL Server ve Katmanlı Mimari kullanılarak geliştirilmiş basit bir ERP uygulamasıdır.",
+                "image": "https://github.com/user-attachments/assets/17ec81d7-f400-43d5-bffc-24308d0688f5",
+                "github": "https://github.com/Burakyilmam/ERP",
+                "url": ""
+            },
+            {
+                "name": "PDF Birleştirme ve Parçalama Uygulaması",
+                "description": "DevExpress, .NET Framework 4.7.2 ve WinForms kullanılarak geliştirilen masaüstü uygulamasıdır. PDF dosyalarının eklenmesi, görüntülenmesi, birleştirilmesi ve istenilen sayfa aralıklarında parçalanmasının yanı sıra Spire.PDF ile Word, Excel ve HTML formatlarına dönüştürülmesini sağlar.",
+                "image": "https://github.com/user-attachments/assets/9e3c54e6-3b66-420b-ab56-d47f0c177175",
+                "github": "https://github.com/Burakyilmam/MergePDFApp",
+                "url": ""
+            },
+            {
+                "name": "Gelişmiş Harita Uygulaması",
+                "description": ".NET Core 8 kullanılarak geliştirilmiş; Bursa'daki nöbetçi eczaneleri CollectAPI üzerinden getiren, Geolocation API ile kullanıcı konumunu gösteren, Google Maps Direction API ve Leaflet Routing Machine ile yol tarifi sağlayan, Turf.js ile coğrafi hesaplamalar yapabilen Leaflet.js tabanlı bir harita uygulamasıdır.",
+                "image": "https://github.com/Burakyilmam/HaritaSite/assets/61635780/1f05a939-ad15-48fb-b4a6-700670d764a4",
+                "github": "https://github.com/Burakyilmam/GelismisHarita",
+                "url": ""
+            },
+            {
+                "name": "FullCalendar Randevu Sistemi",
+                "description": ".NET Core 8 kullanılarak geliştirilmiş; FullCalendar üzerinde randevuları anlık olarak gösteren, AJAX ile randevu ekleme, güncelleme ve silme işlemleri gerçekleştiren, sürükleme özelliğiyle randevu güncellemeyi sağlayan ve basit kullanıcı giriş-kayıt işlemleri içeren bir randevu sistemidir.",
+                "image": "https://github.com/user-attachments/assets/6b010fb9-8eaa-4f79-9315-a907c0039c34",
+                "github": "https://github.com/Burakyilmam/FullCalenderRandevuSistemi",
+                "url": ""
+            },
+            {
+                "name": "Gerçek Zamanlı Mesajlaşma Uygulaması",
+                "description": ".NET Core 8 ve SignalR kullanılarak geliştirilmiş, kullanıcılar arasında anlık mesajlaşma imkanı sağlayan ve aktif kullanıcıların görüntülendiği gerçek zamanlı mesajlaşma uygulamasıdır.",
+                "image": "https://github.com/user-attachments/assets/2b795881-0d23-4419-ac00-f163fd8b9f90",
+                "github": "https://github.com/Burakyilmam/RealTimeChatApp",
+                "url": ""
+            },
+            {
+                "name": "Mail Gönderme Uygulaması",
+                "description": ".NET 8.0 kullanılarak geliştirilen, kolay ve esnek bir şekilde e-posta gönderimi yapılmasına olanak sağlayan bir mail gönderme uygulamasıdır.",
+                "image": "https://github.com/user-attachments/assets/5030f9b5-cbca-47de-9b76-d4c18f0312ee",
+                "github": "https://github.com/Burakyilmam/MailGonder",
+                "url": ""
+            },
+            {
+                "name": "Tatil Sitesi",
+                "description": "",
+                "image": "",
+                "github": "https://github.com/Burakyilmam/TatilSitesi",
+                "url": ""
+            },
+            {
+                "name": "Belediye Sitesi",
+                "description": ".NET Core 6 kullanılarak geliştirilen; PostgreSQL ve Entity Framework ile veri erişimi ve yönetimi sağlanan, responsive tasarıma sahip, OpenWeather API ile hava durumu bilgilerini gösteren ve Katmanlı Mimari ile MVC prensipleri üzerine kurulmuş bir belediye sitesidir.",
+                "image": "https://github.com/Burakyilmam/Belediye/assets/61635780/342b0bab-38e9-4868-ab56-c49fda6aee26",
+                "github": "https://github.com/Burakyilmam/Belediye",
+                "url": ""
+            },
+            {
+                "name": "Döviz Kur Uygulaması",
+                "description": "JavaScript, HTML ve CSS kullanılarak geliştirilmiş bir döviz kuru uygulamasıdır. FreecurrencyAPI üzerinden alınan veriler ile Dolar, Euro, Sterlin ve Ruble'nin Türk Lirası karşısındaki güncel değerlerini görüntüler.",
+                "image": "https://github.com/user-attachments/assets/0fd5193b-873a-4066-91a7-7bef2491fd2a",
+                "github": "https://github.com/Burakyilmam/KurUygulamasi",
+                "url": ""
+            },
+            {
+                "name": "Hava Durumu Uygulaması",
+                "description": "JavaScript, HTML ve CSS kullanılarak geliştirilmiş bir hava durumu uygulamasıdır. OpenWeatherMap API'si üzerinden elde edilen veriler ile hava durumunu görüntüler.",
+                "image": "https://github.com/user-attachments/assets/d839fb89-b137-413e-af30-b553ad46821c",
+                "github": "https://github.com/Burakyilmam/HavaDurumuUygulamasi",
+                "url": ""
+            },
+            {
+                "name": "Butonlu ve Butonsuz Dijital Saat Uygulaması",
+                "description": "JavaScript, HTML ve CSS kullanılarak geliştirilmiş bir dijital saat uygulamasıdır. Anlık saat ve tarih bilgilerinin yanı sıra OpenWeatherMap API'si üzerinden elde edilen hava durumu verilerini de görüntüler.",
+                "image": "https://github.com/user-attachments/assets/172c5406-c65c-4a7f-b391-ed9978e5b7d4",
+                "github": "https://github.com/Burakyilmam/DijitalSaat",
+                "url": ""
+            },
+            {
+                "name": "DevExpress XPO Uygulaması",
+                "description": "DevExpress XPO (eXpress Persistent Objects) kullanılarak geliştirilmiş bir C# WinForms uygulamasıdır.",
+                "image": "https://github.com/Burakyilmam/DevExpressXpoDemo/assets/61635780/acea26dd-385b-4164-8d74-07b68c8bac25",
+                "github": "https://github.com/Burakyilmam/DevExpressXpoDemo",
+                "url": ""
+            },
+            {
+                "name": "Masaüstü Uygulaması",
+                "description": "C# ve Microsoft SQL Server kullanılarak geliştirilmiş bir Windows Forms uygulamasıdır.",
+                "image": "https://github.com/Burakyilmam/MasaustuUygulamaDemo/assets/61635780/0afd9c5b-8a55-4546-9db1-295a923d3f76",
+                "github": "",
+                "url": ""
+            },
+            {
+                "name": "E-Ticaret Sitesi",
+                "description": "ASP.NET Core 6 kullanılarak geliştirilen, responsive tasarıma sahip, Katmanlı Mimari ve MVC prensiplerini kullanan bir e-ticaret sitesidir.",
+                "image": "https://github.com/Burakyilmam/E-TicaretSite/assets/61635780/9a5d29be-51bb-4fa3-8293-d9e32214175d",
+                "github": "https://github.com/Burakyilmam/E-TicaretSite",
+                "url": ""
+            },
+            {
+                "name": "Dinamik Portföy Sitesi",
+                "description": ".NET Core 6, HTML, CSS, JavaScript, Bootstrap ve Microsoft SQL Server kullanılarak oluşturulmuş dinamik bir portföy sitesidir.",
+                "image": "https://github.com/Burakyilmam/Portfolio/assets/61635780/af6d8684-d703-47fd-9873-8adf414f2a27",
+                "github": "https://github.com/Burakyilmam/Portfolio",
+                "url": ""
+            },
+            {
+                "name": "Kategorili Film Sitesi",
+                "description": "ASP.NET Core 6 kullanılarak geliştirilen, responsive tasarıma ve MVC mimarisine sahip kategorili bir film sitesidir.",
+                "image": "/images/filmsite.png",
+                "github": "https://github.com/Burakyilmam/KategoriliFilmSitesi",
+                "url": ""
+            }
+        ]
+    },
+
+    "en": {
+        "projects": [
+            {
+                "name": "Interactive Weather and City Guide Application",
+                "description": "A modern web application that allows users to explore Turkish cities on an interactive map and provides information about weather conditions, city history, tourist attractions, local cuisine, notable people, and districts.",
+                "image": "https://github.com/user-attachments/assets/9746f233-bee4-4dca-9ea6-f8ccfd81fe17",
+                "github": "https://github.com/Burakyilmam/MapWeatherApp",
+                "url": ""
+            },
+            {
+                "name": "Entity Framework ERP Application",
+                "description": "A desktop ERP application developed using .NET Framework and DevExpress with a layered architecture.",
+                "image": "https://github.com/user-attachments/assets/cfb82d36-b514-46d6-a148-803d48117994",
+                "github": "https://github.com/Burakyilmam/ERP_EntityFramework",
+                "url": ""
+            },
+            {
+                "name": "IPT Application",
+                "description": "A desktop application developed using .NET Framework 4.7.2, DevExpress, XPO, and Microsoft SQL Server for project and business process planning, task tracking, and process management.",
+                "image": "/images/IPT.png",
+                "github": "",
+                "url": ""
+            },
+            {
+                "name": "Manure",
+                "description": "A RimWorld mod that introduces dynamic manure production based on animal size and diet. The drying process is affected by weather and temperature, while fresh manure creates bad odors that can affect colonists' mood. Dried manure can be used for fuel and chemfuel production, while fresh manure can be used to create enriched soil that improves agricultural efficiency.",
+                "image": "https://images.steamusercontent.com/ugc/13018122490164990308/7639DDE006BA9852D5C307DC782ADEC5AEF8C1F7/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
+                "github": "https://github.com/Burakyilmam/Manure",
+                "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3784198780"
+            },
+            {
+                "name": "Simple ERP Application",
+                "description": "A simple ERP application developed using .NET Framework 4.7.2, DevExpress, Entity Framework, Microsoft SQL Server, and Layered Architecture.",
+                "image": "https://github.com/user-attachments/assets/17ec81d7-f400-43d5-bffc-24308d0688f5",
+                "github": "https://github.com/Burakyilmam/ERP",
+                "url": ""
+            },
+            {
+                "name": "PDF Merge and Split Application",
+                "description": "A desktop application developed using DevExpress, .NET Framework 4.7.2, and WinForms. It allows users to add, view, merge, and split PDF files by selected page ranges, as well as convert them to Word, Excel, and HTML formats using Spire.PDF.",
+                "image": "https://github.com/user-attachments/assets/9e3c54e6-3b66-420b-ab56-d47f0c177175",
+                "github": "https://github.com/Burakyilmam/MergePDFApp",
+                "url": ""
+            },
+            {
+                "name": "Advanced Map Application",
+                "description": "A Leaflet.js-based map application developed with .NET Core 8 that retrieves on-duty pharmacies in Bursa through CollectAPI, displays the user's location using the Geolocation API, provides directions using Google Maps Direction API and Leaflet Routing Machine, and performs geographical calculations with Turf.js.",
+                "image": "https://github.com/Burakyilmam/HaritaSite/assets/61635780/1f05a939-ad15-48fb-b4a6-700670d764a4",
+                "github": "https://github.com/Burakyilmam/GelismisHarita",
+                "url": ""
+            },
+            {
+                "name": "FullCalendar Appointment System",
+                "description": "An appointment system developed with .NET Core 8 that displays appointments in real time on FullCalendar, supports adding, updating, and deleting appointments with AJAX, allows appointment updates through drag and drop, and includes basic user login and registration functionality.",
+                "image": "https://github.com/user-attachments/assets/6b010fb9-8eaa-4f79-9315-a907c0039c34",
+                "github": "https://github.com/Burakyilmam/FullCalenderRandevuSistemi",
+                "url": ""
+            },
+            {
+                "name": "Real-Time Messaging Application",
+                "description": "A real-time messaging application developed with .NET Core 8 and SignalR that enables instant communication between users and displays active users.",
+                "image": "https://github.com/user-attachments/assets/2b795881-0d23-4419-ac00-f163fd8b9f90",
+                "github": "https://github.com/Burakyilmam/RealTimeChatApp",
+                "url": ""
+            },
+            {
+                "name": "Email Sending Application",
+                "description": "An application developed with .NET 8.0 that enables easy and flexible email sending.",
+                "image": "https://github.com/user-attachments/assets/5030f9b5-cbca-47de-9b76-d4c18f0312ee",
+                "github": "https://github.com/Burakyilmam/MailGonder",
+                "url": ""
+            },
+            {
+                "name": "Vacation Website",
+                "description": "",
+                "image": "",
+                "github": "https://github.com/Burakyilmam/TatilSitesi",
+                "url": ""
+            },
+            {
+                "name": "Municipality Website",
+                "description": "A municipality website developed with .NET Core 6 using PostgreSQL and Entity Framework for data access and management, responsive design, OpenWeather API for weather information, and Layered Architecture with MVC principles.",
+                "image": "https://github.com/Burakyilmam/Belediye/assets/61635780/342b0bab-38e9-4868-ab56-c49fda6aee26",
+                "github": "https://github.com/Burakyilmam/Belediye",
+                "url": ""
+            },
+            {
+                "name": "Currency Exchange Application",
+                "description": "A currency exchange application developed using JavaScript, HTML, and CSS. It displays the current values of the US Dollar, Euro, British Pound, and Russian Ruble against the Turkish Lira using data obtained from FreecurrencyAPI.",
+                "image": "https://github.com/user-attachments/assets/0fd5193b-873a-4066-91a7-7bef2491fd2a",
+                "github": "https://github.com/Burakyilmam/KurUygulamasi",
+                "url": ""
+            },
+            {
+                "name": "Weather Application",
+                "description": "A weather application developed using JavaScript, HTML, and CSS that displays weather information obtained through the OpenWeatherMap API.",
+                "image": "https://github.com/user-attachments/assets/d839fb89-b137-413e-af30-b553ad46821c",
+                "github": "https://github.com/Burakyilmam/HavaDurumuUygulamasi",
+                "url": ""
+            },
+            {
+                "name": "Digital Clock Application with and without Buttons",
+                "description": "A digital clock application developed using JavaScript, HTML, and CSS. In addition to displaying the current time and date, it also displays weather information obtained through the OpenWeatherMap API.",
+                "image": "https://github.com/user-attachments/assets/172c5406-c65c-4a7f-b391-ed9978e5b7d4",
+                "github": "https://github.com/Burakyilmam/DijitalSaat",
+                "url": ""
+            },
+            {
+                "name": "DevExpress XPO Application",
+                "description": "A C# WinForms application developed using DevExpress XPO (eXpress Persistent Objects).",
+                "image": "https://github.com/Burakyilmam/DevExpressXpoDemo/assets/61635780/acea26dd-385b-4164-8d74-07b68c8bac25",
+                "github": "https://github.com/Burakyilmam/DevExpressXpoDemo",
+                "url": ""
+            },
+            {
+                "name": "Desktop Application",
+                "description": "A Windows Forms application developed using C# and Microsoft SQL Server.",
+                "image": "https://github.com/Burakyilmam/MasaustuUygulamaDemo/assets/61635780/0afd9c5b-8a55-4546-9db1-295a923d3f76",
+                "github": "",
+                "url": ""
+            },
+            {
+                "name": "E-Commerce Website",
+                "description": "An e-commerce website developed using ASP.NET Core 6 with responsive design, Layered Architecture, and MVC principles.",
+                "image": "https://github.com/Burakyilmam/E-TicaretSite/assets/61635780/9a5d29be-51bb-4fa3-8293-d9e32214175d",
+                "github": "https://github.com/Burakyilmam/E-TicaretSite",
+                "url": ""
+            },
+            {
+                "name": "Dynamic Portfolio Website",
+                "description": "A dynamic portfolio website created using .NET Core 6, HTML, CSS, JavaScript, Bootstrap, and Microsoft SQL Server.",
+                "image": "https://github.com/Burakyilmam/Portfolio/assets/61635780/af6d8684-d703-47fd-9873-8adf414f2a27",
+                "github": "https://github.com/Burakyilmam/Portfolio",
+                "url": ""
+            },
+            {
+                "name": "Categorized Movie Website",
+                "description": "A categorized movie website developed using ASP.NET Core 6 with responsive design and MVC architecture.",
+                "image": "/images/filmsite.png",
+                "github": "https://github.com/Burakyilmam/KategoriliFilmSitesi",
+                "url": ""
+            }
+        ]
+    }
+}

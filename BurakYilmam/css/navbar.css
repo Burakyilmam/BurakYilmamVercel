@@ -1,0 +1,434 @@
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    width: 100%;
+    height: 74px;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   NAV CONTAINER
+===================================================== */
+
+.nav-container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   NAV MENU
+===================================================== */
+
+.nav-menu {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: clamp(20px, 3vw, 50px);
+
+    min-width: 0;
+}
+
+
+/* =====================================================
+   NAV ITEMS
+===================================================== */
+
+.nav-item {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #202b3b;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.nav-item i {
+    width: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 18px;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.nav-item:hover {
+    color: #3b82f6;
+
+    transform: translateY(-1px);
+}
+
+
+.nav-item:hover i {
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   NAV ACTIONS
+===================================================== */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* =====================================================
+   LANGUAGE SWITCHER
+===================================================== */
+
+.language-switcher {
+    height: 42px;
+    min-width: 70px;
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border: 1px solid #d9e2f2;
+    border-radius: 11px;
+
+    background: #ffffff;
+
+    color: #202b3b;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.2s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.language-switcher i {
+    font-size: 16px;
+}
+
+
+.language-switcher:hover {
+    background: #2463eb;
+    color: #ffffff;
+
+    border-color: #2463eb;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 15px rgba(36, 99, 235, 0.20);
+}
+
+
+.language-switcher:active {
+    transform: scale(0.95);
+}
+
+
+/* =====================================================
+   HAMBURGER
+===================================================== */
+
+.menu-toggle {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+    color: #202b3b;
+
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.menu-toggle:hover {
+    color: #3b82f6;
+    background: #f4f7fc;
+}
+
+
+.menu-toggle:active {
+    transform: scale(0.95);
+}
+
+
+/* =====================================================
+   TABLET / LAPTOP
+   1024px
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        height: 65px;
+    }
+
+
+    .nav-container {
+        height: 100%;
+
+        padding: 0 20px;
+
+        justify-content: flex-end;
+    }
+
+
+    /* ---------------------------------------------
+       MOBILE ACTIONS
+    --------------------------------------------- */
+
+    .nav-actions {
+        display: flex;
+
+        align-items: center;
+
+        gap: 8px;
+    }
+
+
+    /* ---------------------------------------------
+       LANGUAGE
+    --------------------------------------------- */
+
+    .language-switcher {
+        height: 38px;
+
+        min-width: 58px;
+
+        padding: 0 10px;
+
+        border-radius: 9px;
+
+        font-size: 13px;
+    }
+
+
+    .language-switcher i {
+        font-size: 14px;
+    }
+
+
+    /* ---------------------------------------------
+       HAMBURGER
+    --------------------------------------------- */
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+    /* ---------------------------------------------
+       MOBILE MENU
+    --------------------------------------------- */
+
+    .nav-menu {
+        position: absolute;
+
+        top: 65px;
+        left: 0;
+
+        width: 100%;
+
+        background: #ffffff;
+
+        border-bottom: 1px solid #e5e7eb;
+
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.08);
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+        justify-content: flex-start;
+
+        gap: 0;
+
+        max-height: 0;
+
+        overflow: hidden;
+
+        opacity: 0;
+
+        pointer-events: none;
+
+        transition:
+            max-height 0.3s ease,
+            opacity 0.2s ease;
+
+        flex: none;
+    }
+
+
+    /* ---------------------------------------------
+       MOBILE MENU ACTIVE
+    --------------------------------------------- */
+
+    .nav-menu.active {
+        max-height: 600px;
+
+        opacity: 1;
+
+        pointer-events: auto;
+    }
+
+
+    /* ---------------------------------------------
+       MOBILE NAV ITEMS
+    --------------------------------------------- */
+
+    .nav-item {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 17px 25px;
+
+        font-size: 16px;
+
+        border-bottom: 1px solid #f0f0f0;
+
+        gap: 14px;
+
+        transform: none;
+    }
+
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+
+    .nav-item:hover {
+        transform: none;
+
+        background: #f7f9fc;
+    }
+
+
+    .nav-item i {
+        width: 22px;
+
+        font-size: 17px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .nav-container {
+        padding: 0 14px;
+    }
+
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+
+    .language-switcher {
+        height: 36px;
+
+        min-width: 55px;
+
+        padding: 0 8px;
+
+        border-radius: 9px;
+
+        font-size: 12px;
+    }
+
+
+    .language-switcher i {
+        font-size: 14px;
+    }
+
+
+    .menu-toggle {
+        width: 38px;
+        height: 38px;
+
+        font-size: 22px;
+    }
+}

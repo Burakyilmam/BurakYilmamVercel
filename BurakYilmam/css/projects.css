@@ -1,0 +1,350 @@
+/* =========================
+   PORTFOLIO / PROJECTS
+========================= */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+
+    max-height: 550px;
+    overflow-y: auto;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+.projects-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background: #2f6df6;
+    border-radius: 10px;
+}
+
+.projects-container::-webkit-scrollbar-thumb:hover {
+    background: #1f56d1;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: #f5f7fa;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+
+    background: #f5f7fa;
+
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.03);
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    background: linear-gradient(
+        to top,
+        rgba(25, 103, 235, 0.97) 0%,
+        rgba(25, 103, 235, 0.80) 45%,
+        rgba(25, 103, 235, 0.05) 100%
+    );
+
+    opacity: 0;
+
+    transition: opacity 0.35s ease;
+
+    pointer-events: none;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.project-content {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    color: white;
+
+    transform: translateY(20px);
+
+    transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-content {
+    transform: translateY(0);
+}
+
+.project-content h3 {
+    margin: 0 0 8px;
+
+    font-size: 20px;
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    overflow: hidden;
+}
+
+.project-content p {
+    margin: 0 0 15px;
+
+    font-size: 13px;
+    line-height: 1.45;
+
+    color: rgba(255, 255, 255, 0.95);
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+    overflow: hidden;
+}
+
+/* =========================
+   PROJECT LINKS
+========================= */
+
+.project-links {
+    display: flex;
+    gap: 10px;
+
+    pointer-events: auto;
+}
+
+.project-link {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: white;
+    color: #2463eb;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.project-link:hover {
+    transform: scale(1.1);
+
+    background: #2463eb;
+    color: white;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.projects-error {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #777;
+}
+
+/* =========================
+   LARGE TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+    .projects-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .projects-container {
+        grid-template-columns: 1fr;
+
+        max-height: none;
+        overflow-y: visible;
+
+        padding: 5px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-content h3 {
+        font-size: 19px;
+    }
+
+    .project-content p {
+        font-size: 13px;
+    }
+}
+
+.project-content p {
+    position: relative;
+    cursor: help;
+}
+
+/* =========================
+   PROJECT DESCRIPTION
+========================= */
+
+.project-description {
+    margin: 0 0 15px;
+    font-size: 13px;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.95);
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+    cursor: help;
+    pointer-events: auto;
+}
+
+
+/* =========================
+   DESCRIPTION TOOLTIP
+========================= */
+
+.project-tooltip {
+    position: fixed;
+
+    width: 340px;
+    max-width: calc(100vw - 30px);
+
+    padding: 14px 16px;
+
+    background: rgba(20, 30, 50, 0.98);
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+    line-height: 1.55;
+    font-weight: 400;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3);
+
+    z-index: 99999;
+
+    pointer-events: none;
+
+    animation: tooltipFadeIn 0.18s ease;
+}
+
+@keyframes tooltipFadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

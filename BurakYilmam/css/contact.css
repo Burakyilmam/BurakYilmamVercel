@@ -1,0 +1,667 @@
+/* =====================================================
+   CONTACT
+===================================================== */
+
+#contact {
+    width: 100%;
+}
+
+
+/* =====================================================
+   CONTACT CONTAINER
+===================================================== */
+
+.contact-container {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 26px;
+
+    margin-top: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   CONTACT CARD
+===================================================== */
+
+.contact-card {
+
+    position: relative;
+
+    width: 100%;
+    height: 230px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: contain;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.contact-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================================
+   FONT AWESOME COMMON
+===================================================== */
+
+.contact-card i {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* =====================================================
+   PHONE
+===================================================== */
+
+.contact-phone {
+
+    background-color:
+        #4caf50;
+
+    background-image:
+        none;
+}
+
+
+.contact-phone i {
+
+    color:
+        #ffffff;
+
+    font-size:
+        70px;
+
+    filter:
+        drop-shadow(
+            0 4px 6px
+            rgba(0, 0, 0, 0.18)
+        );
+}
+
+
+.contact-phone:hover i {
+
+    transform:
+        scale(1.08);
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
+
+.contact-whatsapp {
+
+    background-color:
+        #25d366;
+
+    background-image:
+        none;
+}
+
+
+.contact-whatsapp i {
+
+    color:
+        #ffffff;
+
+    font-size:
+        90px;
+
+    filter:
+        drop-shadow(
+            0 4px 6px
+            rgba(0, 0, 0, 0.18)
+        );
+}
+
+
+.contact-whatsapp:hover i {
+
+    transform:
+        scale(1.08);
+}
+
+
+/* =====================================================
+   INSTAGRAM
+===================================================== */
+
+.contact-instagram {
+
+    background:
+        linear-gradient(
+            135deg,
+            #833ab4 0%,
+            #c13584 35%,
+            #fd1d1d 65%,
+            #fcb045 100%
+        ) !important;
+
+    background-image:
+        linear-gradient(
+            135deg,
+            #833ab4 0%,
+            #c13584 35%,
+            #fd1d1d 65%,
+            #fcb045 100%
+        ) !important;
+
+    color:
+        #ffffff;
+}
+
+
+/* =====================================================
+   INSTAGRAM ICON
+===================================================== */
+
+.contact-instagram i {
+
+    width:
+        auto;
+
+    height:
+        auto;
+
+    display:
+        block;
+
+    color:
+        #ffffff !important;
+
+    background:
+        none !important;
+
+    font-size:
+        90px !important;
+
+    line-height:
+        1;
+
+    filter:
+        drop-shadow(
+            0 4px 6px
+            rgba(0, 0, 0, 0.18)
+        );
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* =====================================================
+   INSTAGRAM HOVER
+===================================================== */
+
+.contact-instagram:hover i {
+
+    transform:
+        scale(1.08);
+}
+
+
+/* =====================================================
+   FACEBOOK
+===================================================== */
+
+.contact-facebook {
+
+    background-color:
+        #1877f2;
+
+    background-image:
+        none;
+}
+
+
+.contact-facebook i {
+
+    color:
+        #ffffff;
+
+    font-size:
+        90px;
+
+    filter:
+        drop-shadow(
+            0 4px 6px
+            rgba(0, 0, 0, 0.18)
+        );
+}
+
+
+.contact-facebook:hover i {
+
+    transform:
+        scale(1.08);
+}
+
+
+/* =====================================================
+   LINKEDIN
+===================================================== */
+
+.contact-linkedin {
+
+    background-color:
+        #0a66c2;
+
+    background-image:
+        none;
+}
+
+
+.contact-linkedin i {
+
+    color:
+        white;
+
+    font-size:
+        90px;
+
+    filter:
+        drop-shadow(
+            0 4px 6px
+            rgba(0, 0, 0, 0.12)
+        );
+}
+
+
+.contact-linkedin:hover i {
+
+    transform:
+        scale(1.08);
+}
+
+
+/* =====================================================
+   GITHUB
+===================================================== */
+
+.contact-github {
+
+    background-color:
+        #24292e;
+
+    background-image:
+        none;
+}
+
+
+.contact-github i {
+
+    color:
+        #ffffff;
+
+    font-size:
+        90px;
+
+    filter:
+        drop-shadow(
+            0 4px 6px
+            rgba(0, 0, 0, 0.25)
+        );
+}
+
+
+.contact-github:hover i {
+
+    transform:
+        scale(1.08);
+}
+
+
+/* =====================================================
+   OUTLOOK
+===================================================== */
+
+.contact-outlook {
+
+    background-color:
+        white;
+
+    background-size:
+        35% auto;
+
+    background-position:
+        center;
+
+    background-repeat:
+        no-repeat;
+}
+
+
+/* =====================================================
+   GMAIL
+===================================================== */
+
+.contact-gmail {
+
+    background-color:
+        #ffffff;
+
+    background-size:
+        45% auto;
+
+    background-position:
+        center;
+
+    background-repeat:
+        no-repeat;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .contact-container {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap:
+            22px;
+    }
+
+
+    .contact-card {
+
+        height:
+            220px;
+    }
+
+
+    .contact-phone i {
+
+        font-size:
+            66px;
+    }
+
+
+    .contact-whatsapp i,
+    .contact-facebook i,
+    .contact-linkedin i,
+    .contact-github i {
+
+        font-size:
+            82px;
+    }
+
+
+    .contact-instagram i {
+
+        width:
+            82px;
+
+        height:
+            82px;
+
+        font-size:
+            44px;
+    }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .contact-container {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            18px;
+    }
+
+
+    .contact-card {
+
+        height:
+            210px;
+
+        border-radius:
+            16px;
+    }
+
+
+    .contact-phone i {
+
+        font-size:
+            64px;
+    }
+
+
+    .contact-whatsapp i,
+    .contact-facebook i,
+    .contact-linkedin i,
+    .contact-github i {
+
+        font-size:
+            78px;
+    }
+
+
+    .contact-instagram i {
+
+        width:
+            78px;
+
+        height:
+            78px;
+
+        font-size:
+            42px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .contact-container {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            16px;
+
+        margin-top:
+            20px;
+    }
+
+
+    .contact-card {
+
+        height:
+            200px;
+
+        border-radius:
+            16px;
+    }
+
+
+    .contact-phone i {
+
+        font-size:
+            60px;
+    }
+
+
+    .contact-whatsapp i,
+    .contact-facebook i,
+    .contact-linkedin i,
+    .contact-github i {
+
+        font-size:
+            72px;
+    }
+
+
+    .contact-instagram i {
+
+        width:
+            72px;
+
+        height:
+            72px;
+
+        font-size:
+            38px;
+    }
+
+
+    .contact-outlook {
+
+        background-size:
+            65% auto;
+    }
+
+
+    .contact-gmail {
+
+        background-size:
+            100% auto;
+    }
+}
+
+
+/* =====================================================
+   CONTACT MAP
+===================================================== */
+
+.contact-map-container {
+
+    width:
+        100%;
+
+    margin-top:
+        30px;
+
+    padding:
+        0 10px 10px;
+
+    box-sizing:
+        border-box;
+}
+
+
+#contactMap {
+
+    width:
+        100%;
+
+    height:
+        350px;
+
+    border-radius:
+        15px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   MAP RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .contact-map-container {
+
+        margin-top:
+            25px;
+
+        padding:
+            0 5px 5px;
+    }
+
+
+    #contactMap {
+
+        height:
+            300px;
+
+        border-radius:
+            14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    #contactMap {
+
+        height:
+            250px;
+
+        border-radius:
+            12px;
+    }
+}

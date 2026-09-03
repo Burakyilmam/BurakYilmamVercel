@@ -1,0 +1,464 @@
+/* =====================================================
+   TABLET
+   768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* -------------------------
+       SUMMARY
+       VERTICAL LAYOUT
+    ------------------------- */
+
+    .summary-section {
+        padding: 10px 15px 30px;
+    }
+
+    .summary-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+
+    /* -------------------------
+       PROFILE
+    ------------------------- */
+
+    .summary-profile {
+        order: 1;
+    }
+
+    .profile-image {
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        margin: 0 auto;
+        border-radius: 14px;
+    }
+
+
+    /* -------------------------
+       CONTENT
+    ------------------------- */
+
+    .summary-content {
+        order: 2;
+        max-width: none;
+        text-align: center;
+    }
+
+    .summary-content h1 {
+        font-size: clamp(32px, 7vw, 42px);
+        line-height: 1.1;
+        margin-bottom: 9px;
+    }
+
+    .summary-content h2 {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 18px;
+    }
+
+
+    /* -------------------------
+       TECHNOLOGIES
+       3 COLUMNS
+    ------------------------- */
+
+    .summary-tech {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 8px;
+    }
+
+    .summary-tech span {
+        min-height: 40px;
+        font-size: 12px;
+        padding: 4px;
+    }
+
+
+    /* -------------------------
+       CONTACT
+       8 ITEMS
+    ------------------------- */
+
+    .contact-buttons {
+        display: grid;
+
+        grid-template-columns:
+            repeat(8, 50px);
+
+        gap: 10px;
+
+        justify-content: center;
+    }
+
+    .contact-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 21px;
+    }
+
+
+    /* -------------------------
+       CV
+    ------------------------- */
+
+    .cv-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* -------------------------
+       STATS
+    ------------------------- */
+
+    .summary-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .experience-timeline {
+        max-height: 600px;
+
+        padding-right: 5px;
+    }
+
+    .experience-item {
+        grid-template-columns:
+            90px
+            30px
+            minmax(0, 1fr);
+
+        column-gap: 10px;
+    }
+
+    .experience-date {
+        font-size: 11px;
+
+        text-align: right;
+
+        word-break: normal;
+    }
+
+    .experience-company {
+        font-size: 14px;
+    }
+
+    .experience-position {
+        font-size: 12px;
+    }
+
+    .experience-description {
+        font-size: 12px;
+
+        line-height: 1.5;
+
+        padding-left: 16px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   600px
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .summary-section {
+        padding: 8px 10px 30px;
+        border-radius: 10px;
+    }
+
+    .summary-container {
+        gap: 14px;
+    }
+
+
+    /* -------------------------
+       PROFILE
+    ------------------------- */
+
+    .profile-image {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        border-radius: 12px;
+    }
+
+
+    /* -------------------------
+       CONTENT
+    ------------------------- */
+
+    .summary-content {
+        text-align: center;
+    }
+
+    .summary-content h1 {
+        font-size:
+            clamp(29px, 8vw, 38px);
+
+        line-height: 1.1;
+        margin-bottom: 9px;
+        letter-spacing: -0.5px;
+    }
+
+    .summary-content h2 {
+        font-size: 17px;
+        line-height: 1.4;
+        margin-bottom: 18px;
+    }
+
+    .summary-content p {
+        font-size: 14px;
+        line-height: 1.65;
+        margin-bottom: 13px;
+    }
+
+
+    /* -------------------------
+       TECHNOLOGIES
+    ------------------------- */
+
+    .summary-tech {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 7px;
+
+        margin-top: 18px;
+        margin-bottom: 20px;
+    }
+
+    .summary-tech span {
+        min-height: 40px;
+        font-size: 12px;
+        padding: 4px 5px;
+    }
+
+
+    /* -------------------------
+       CONTACT
+    ------------------------- */
+
+    .contact-buttons {
+        grid-template-columns:
+            repeat(8, 46px);
+
+        gap: 7px;
+
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .contact-btn {
+        width: 46px;
+        height: 46px;
+        font-size: 19px;
+    }
+
+
+    /* -------------------------
+       STATS
+    ------------------------- */
+
+    .summary-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 8px;
+        margin-top: 22px;
+    }
+
+    .stat-card {
+        padding: 13px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .stat-card > i {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .stat-card strong {
+        font-size: 19px;
+    }
+
+    .stat-card span {
+        font-size: 11px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   425px
+===================================================== */
+
+@media (max-width: 425px) {
+
+    .summary-section {
+        padding: 6px 8px 25px;
+    }
+
+    .summary-container {
+        gap: 12px;
+    }
+
+
+    /* -------------------------
+       PROFILE
+    ------------------------- */
+
+    .profile-image {
+        width: 100%;
+        max-width: 360px;
+
+        height: 300px;
+
+        aspect-ratio: auto;
+
+        border-radius: 10px;
+    }
+
+
+    /* -------------------------
+       CONTENT
+    ------------------------- */
+
+    .summary-content h1 {
+        font-size: 29px;
+        line-height: 1.08;
+    }
+
+    .summary-content h2 {
+        font-size: 16px;
+    }
+
+    .summary-content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    /* -------------------------
+       TECHNOLOGIES
+    ------------------------- */
+
+    .summary-tech {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 6px;
+    }
+
+    .summary-tech span {
+        min-height: 38px;
+        font-size: 11px;
+        padding: 3px;
+    }
+
+
+    /* -------------------------
+       CONTACT
+    ------------------------- */
+
+    .contact-buttons {
+        grid-template-columns:
+            repeat(8, 42px);
+
+        gap: 4px;
+    }
+
+    .contact-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+
+
+    /* -------------------------
+       STATS
+    ------------------------- */
+
+    .summary-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .stat-card {
+        padding: 11px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stat-card div {
+        align-items: center;
+    }
+}
+
+
+/* =====================================================
+   EXTRA SMALL
+   350px
+===================================================== */
+
+@media (max-width: 350px) {
+
+    .summary-content h1 {
+        font-size: 27px;
+    }
+
+    .summary-content h2 {
+        font-size: 15px;
+    }
+
+
+    /* -------------------------
+       TECHNOLOGIES
+    ------------------------- */
+
+    .summary-tech {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 5px;
+    }
+
+    .summary-tech span {
+        font-size: 10px;
+        min-height: 36px;
+        padding: 2px;
+    }
+
+
+    /* -------------------------
+       CONTACT
+    ------------------------- */
+
+    .contact-buttons {
+        grid-template-columns:
+            repeat(8, 38px);
+
+        gap: 3px;
+    }
+
+    .contact-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "tr": {
+        "navbar": {
+            "summary": "Özet",
+            "about": "Hakkımda",
+            "skills": "Yetenekler",
+            "experience": "Deneyim",
+            "education": "Eğitim",
+            "portfolio": "Portföy",
+            "certificates": "Sertifikalar",
+            "contact": "İletişim"
+        },
+
+        "sections": {
+            "about": "Hakkımda",
+            "skills": "Yetenekler",
+            "experience": "Deneyim",
+            "education": "Eğitim",
+            "portfolio": "Portföy",
+            "certificates": "Sertifikalar",
+            "contact": "İletişim"
+        },
+
+        "summary": {
+            "downloadCv": "CV İndir",
+            "years": "Yıl",
+            "technologies": "Teknoloji",
+            "certificates": "Sertifika",
+            "projects": "Proje"
+        }
+    },
+
+    "en": {
+        "navbar": {
+            "summary": "Summary",
+            "about": "About",
+            "skills": "Skills",
+            "experience": "Experience",
+            "education": "Education",
+            "portfolio": "Portfolio",
+            "certificates": "Certificates",
+            "contact": "Contact"
+        },
+
+        "sections": {
+            "about": "About",
+            "skills": "Skills",
+            "experience": "Experience",
+            "education": "Education",
+            "portfolio": "Portfolio",
+            "certificates": "Certificates",
+            "contact": "Contact"
+        },
+
+        "summary": {
+            "downloadCv": "Download CV",
+            "years": "Years",
+            "technologies": "Technologies",
+            "certificates": "Certificates",
+            "projects": "Projects"
+        }
+    }
+}

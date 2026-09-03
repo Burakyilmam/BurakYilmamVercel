@@ -1,0 +1,47 @@
+{
+    "tr": {
+        "educations": [
+            {
+                "school": "Kütahya Dumlupınar Üniversitesi",
+                "department": "Bilgisayar Mühendisliği",
+                "date": "2016 - 2021",
+                "gpa": "2.89"
+            },
+            {
+                "school": "Hüseyin Sungur Anadolu Lisesi",
+                "department": "Sayısal",
+                "date": "2012 - 2016",
+                "gpa": "75"
+            },
+            {
+                "school": "Nedim Öztan İlköğretim Okulu",
+                "department": "",
+                "date": "2004 - 2012",
+                "gpa": "85"
+            }
+        ]
+    },
+
+    "en": {
+        "educations": [
+            {
+                "school": "Kütahya Dumlupınar University",
+                "department": "Computer Engineering",
+                "date": "2016 - 2021",
+                "gpa": "2.89"
+            },
+            {
+                "school": "Hüseyin Sungur Anatolian High School",
+                "department": "Science and Mathematics",
+                "date": "2012 - 2016",
+                "gpa": "75"
+            },
+            {
+                "school": "Nedim Öztan Primary School",
+                "department": "",
+                "date": "2004 - 2012",
+                "gpa": "85"
+            }
+        ]
+    }
+}

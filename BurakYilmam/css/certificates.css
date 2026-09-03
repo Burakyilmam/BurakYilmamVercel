@@ -1,0 +1,165 @@
+/* =====================================================
+   CERTIFICATES
+===================================================== */
+
+.certificates-container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin-top: 30px;
+
+    /* 2 tam sıra görünsün */
+    max-height: 810px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding-right: 8px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.certificates-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.certificates-container::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    border-radius: 10px;
+}
+
+.certificates-container::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 10px;
+}
+
+.certificates-container::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+
+/* =====================================================
+   CERTIFICATE ITEM
+===================================================== */
+
+.certificate-item {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =====================================================
+   CERTIFICATE CARD
+===================================================== */
+
+.certificate-card {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =====================================================
+   CERTIFICATE LINK
+===================================================== */
+
+.certificate-card a {
+    display: block;
+
+    width: 100%;
+
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   CERTIFICATE IMAGE
+===================================================== */
+
+.certificate-card img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    /* Orijinal oran korunur */
+    aspect-ratio: 249 / 170;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.certificate-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    .certificates-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-height: 810px;
+
+        gap: 8px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .certificates-container {
+        grid-template-columns: 1fr;
+
+        max-height: 600px;
+
+        gap: 12px;
+
+        padding-right: 6px;
+    }
+
+    .certificate-card img {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 249 / 170;
+
+        object-fit: contain;
+    }
+
+}

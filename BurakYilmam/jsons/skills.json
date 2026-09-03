@@ -1,0 +1,181 @@
+{
+    "tr": {
+        "skills": [
+            {
+                "name": "HTML",
+                "percentage": 90,
+                "icon": "/icons/html.png"
+            },
+            {
+                "name": "CSS",
+                "percentage": 75,
+                "icon": "/icons/css.jpg"
+            },
+            {
+                "name": "JavaScript",
+                "percentage": 45,
+                "icon": "/icons/js.png"
+            },
+            {
+                "name": "Bootstrap",
+                "percentage": 65,
+                "icon": "/icons/bootstrap.png"
+            },
+            {
+                "name": "C#",
+                "percentage": 60,
+                "icon": "/icons/csharp.webp"
+            },
+            {
+                "name": ".NET",
+                "percentage": 70,
+                "icon": "/icons/dotnet.png"
+            },
+            {
+                "name": "GitHub",
+                "percentage": 70,
+                "icon": "/icons/github.png"
+            },
+            {
+                "name": "Microsoft SQL Server (MSSQL)",
+                "percentage": 65,
+                "icon": "/icons/mssql.png"
+            },
+            {
+                "name": "DevExpress",
+                "percentage": 60,
+                "icon": "/icons/devexpress.png"
+            },
+            {
+                "name": "DevExpress XPO",
+                "percentage": 55,
+                "icon": "/icons/devexpress.png"
+            },
+            {
+                "name": "PostgreSQL",
+                "percentage": 50,
+                "icon": "/icons/postgresql.webp"
+            },
+            {
+                "name": "ADO.NET",
+                "percentage": 65,
+                "icon": "/icons/adonet.jpg"
+            },
+            {
+                "name": "Entity Framework",
+                "percentage": 60,
+                "icon": "/icons/ef.png"
+            },
+            {
+                "name": "Katmanlı Mimari",
+                "percentage": 65,
+                "icon": "/icons/layer.png"
+            },
+            {
+                "name": "Web API",
+                "percentage": 65,
+                "icon": "/icons/dotnetpng"
+            },
+            {
+                "name": "ASP.NET MVC",
+                "percentage": 65,
+                "icon": "/icons/mvc.png"
+            },
+            {
+                "name": "Leaflet.js",
+                "percentage": 55,
+                "icon": "/icons/leaflet.png"
+            }
+        ]
+    },
+
+    "en": {
+        "skills": [
+            {
+                "name": "HTML",
+                "percentage": 90,
+                "icon": "/icons/html.png"
+            },
+            {
+                "name": "CSS",
+                "percentage": 75,
+                "icon": "/icons/css.jpg"
+            },
+            {
+                "name": "JavaScript",
+                "percentage": 45,
+                "icon": "/icons/js.png"
+            },
+            {
+                "name": "Bootstrap",
+                "percentage": 65,
+                "icon": "/icons/bootstrap.png"
+            },
+            {
+                "name": "C#",
+                "percentage": 60,
+                "icon": "/icons/csharp.webp"
+            },
+            {
+                "name": ".NET",
+                "percentage": 70,
+                "icon": "/icons/dotnet.png"
+            },
+            {
+                "name": "GitHub",
+                "percentage": 70,
+                "icon": "/icons/github.png"
+            },
+            {
+                "name": "Microsoft SQL Server (MSSQL)",
+                "percentage": 65,
+                "icon": "/icons/mssql.png"
+            },
+            {
+                "name": "DevExpress",
+                "percentage": 60,
+                "icon": "/icons/devexpress.png"
+            },
+            {
+                "name": "DevExpress XPO",
+                "percentage": 55,
+                "icon": "/icons/devexpress.png"
+            },
+            {
+                "name": "PostgreSQL",
+                "percentage": 50,
+                "icon": "/icons/postgresql.webp"
+            },
+            {
+                "name": "ADO.NET",
+                "percentage": 65,
+                "icon": "/icons/adonet.jpg"
+            },
+            {
+                "name": "Entity Framework",
+                "percentage": 60,
+                "icon": "/icons/ef.png"
+            },
+            {
+                "name": "N-Tier Architecture",
+                "percentage": 65,
+                "icon": "/icons/layer.png"
+            },
+            {
+                "name": "Web API",
+                "percentage": 65,
+                "icon": "/icons/dotnet.png"
+            },
+            {
+                "name": "ASP.NET MVC",
+                "percentage": 65,
+                "icon": "/icons/mvc.png"
+            },
+            {
+                "name": "Leaflet.js",
+                "percentage": 55,
+                "icon": "/icons/leaflet.png"
+            }
+        ]
+    }
+}
