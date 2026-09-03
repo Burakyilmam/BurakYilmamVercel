@@ -74,7 +74,7 @@
             {
                 "name": "Web API",
                 "percentage": 65,
-                "icon": "/icons/dotnetpng"
+                "icon": "/icons/dotnet.png"
             },
             {
                 "name": "ASP.NET MVC",
