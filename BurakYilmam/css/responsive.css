@@ -126,19 +126,17 @@
     .experience-item {
         width: 100%;
         min-width: 0;
-        display: grid;
-        grid-template-columns: 22px minmax(0, 1fr);
-        column-gap: 10px;
-        min-height: 0;
+        display: block;
+        position: relative;
         box-sizing: border-box;
+        padding-left: 30px;
     }
 
     .experience-date {
-        grid-column: 1 / -1;
         width: 100%;
         min-width: 0;
         text-align: left;
-        padding: 0 0 8px 0;
+        padding: 0 0 8px;
         font-size: 12px;
         line-height: 1.4;
         overflow-wrap: anywhere;
@@ -146,12 +144,14 @@
     }
 
     .experience-marker {
-        grid-column: 1;
-        grid-row: 2;
+        position: absolute;
+        left: 0;
+        top: 38px;
+        bottom: 30px;
         width: 22px;
         display: flex;
         justify-content: center;
-        position: relative;
+        box-sizing: border-box;
     }
 
     .experience-marker::before {
@@ -162,13 +162,11 @@
 
     .experience-marker::after {
         top: 16px;
-        bottom: -10px;
+        bottom: 0;
         width: 2px;
     }
 
     .experience-content {
-        grid-column: 2;
-        grid-row: 2;
         width: 100%;
         min-width: 0;
         padding-bottom: 30px;
@@ -350,36 +348,18 @@
         overflow-x: hidden;
     }
 
-    .experience-item {
-        min-width: 0;
-        grid-template-columns: 75px 24px minmax(0, 1fr);
-        column-gap: 8px;
-    }
-
-    .experience-date {
-        min-width: 0;
-        font-size: 10px;
-        overflow-wrap: break-word;
-    }
-
     .experience-company {
-        min-width: 0;
         font-size: 13px;
-        overflow-wrap: anywhere;
     }
 
     .experience-position {
-        min-width: 0;
         font-size: 11px;
-        overflow-wrap: anywhere;
     }
 
     .experience-description {
-        min-width: 0;
         font-size: 11px;
         line-height: 1.5;
         padding-left: 10px;
-        overflow-wrap: anywhere;
     }
 }
 
@@ -486,11 +466,6 @@
         overflow-wrap: anywhere;
     }
 
-    .experience-item {
-        grid-template-columns: 65px 22px minmax(0, 1fr);
-        column-gap: 6px;
-    }
-
     .experience-date {
         font-size: 9px;
     }
@@ -571,11 +546,6 @@
 
     .stat-card span {
         font-size: 10px;
-    }
-
-    .experience-item {
-        grid-template-columns: 55px 20px minmax(0, 1fr);
-        column-gap: 5px;
     }
 
     .experience-date {
