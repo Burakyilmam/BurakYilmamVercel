@@ -5,7 +5,7 @@ async function loadContact() {
         const response = await fetch("../jsons/summary.json");
 
         if (!response.ok) {
-            throw new Error("Summary JSON yüklenemedi.");
+            throw new Error(`Summary JSON yüklenemedi. Status: ${response.status}`);
         }
 
         contactData = await response.json();
@@ -19,14 +19,14 @@ function renderContact() {
     const container = document.getElementById("contactContainer");
 
     if (!container) {
-        console.error("contactContainer bulunamadı.");
+        console.error("contactContainer elemanı DOM'da bulunamadı.");
         return;
     }
 
-    const contacts = contactData.contacts;
+    const contacts = contactData?.contacts;
 
     if (!contacts) {
-        console.error("Contact bilgileri bulunamadı.");
+        console.error("Contact bilgileri JSON içinde bulunamadı.");
         return;
     }
 
@@ -62,50 +62,58 @@ function renderContact() {
     const contactItems = [
         {
             title: titles.phone,
-            url: `tel:${contacts.phone}`,
+            info: contacts.phone || "",
+            url: contacts.phone ? `tel:${contacts.phone}` : "#",
             type: "phone",
             fontAwesome: "fas fa-phone"
         },
         {
             title: titles.whatsapp,
-            url: contacts.whatsapp,
+            info: contacts.phone || "",
+            url: contacts.whatsapp || "#",
             type: "whatsapp",
             fontAwesome: "fab fa-whatsapp"
         },
         {
             title: titles.instagram,
-            url: contacts.instagram,
+            info: "@byilmam98",
+            url: contacts.instagram || "#",
             type: "instagram",
             fontAwesome: "fab fa-instagram"
         },
         {
             title: titles.facebook,
-            url: contacts.facebook,
+            info: "burakyilmamm",
+            url: contacts.facebook || "#",
             type: "facebook",
             fontAwesome: "fab fa-facebook-f"
         },
         {
             title: titles.linkedin,
-            url: contacts.linkedin,
+            info: "Burak Yılmam",
+            url: contacts.linkedin || "#",
             type: "linkedin",
             fontAwesome: "fab fa-linkedin-in"
         },
         {
             title: titles.gitHub,
-            url: contacts.gitHub,
+            info: "Burakyilmam",
+            url: contacts.gitHub || "#",
             type: "github",
             fontAwesome: "fab fa-github"
         },
         {
             title: titles.outlook,
+            info: contacts.outlook || "",
             icon: "../icons/outlook.webp",
-            url: `mailto:${contacts.outlook}`,
+            url: contacts.outlook ? `mailto:${contacts.outlook}` : "#",
             type: "outlook"
         },
         {
             title: titles.gmail,
+            info: contacts.gmail || "",
             icon: "../icons/gmail.webp",
-            url: `mailto:${contacts.gmail}`,
+            url: contacts.gmail ? `mailto:${contacts.gmail}` : "#",
             type: "gmail"
         }
     ];
@@ -125,19 +133,27 @@ function renderContact() {
             card.rel = "noopener noreferrer";
         }
 
-        if (contact.fontAwesome) {
-            card.innerHTML = `<i class="${contact.fontAwesome}"></i>`;
-        } else {
-            card.style.backgroundImage = `url("${contact.icon}")`;
-        }
+        const frontContent = contact.fontAwesome
+            ? `<i class="${contact.fontAwesome}"></i>`
+            : `<div class="contact-image-front" style="background-image: url('${contact.icon}')"></div>`;
+
+        card.innerHTML = `
+            <div class="contact-card-inner">
+                <div class="contact-card-front">
+                    ${frontContent}
+                </div>
+                <div class="contact-card-back">
+                    <strong>${contact.title}</strong>
+                    <span>${contact.info}</span>
+                </div>
+            </div>
+        `;
 
         container.appendChild(card);
     });
 }
 
-document.addEventListener("languageChanged", () => {
-    renderContact();
-});
+let contactMapInstance = null;
 
 function loadContactMap() {
     const mapElement = document.getElementById("contactMap");
@@ -146,19 +162,29 @@ function loadContactMap() {
         return;
     }
 
+    if (contactMapInstance !== null) {
+        contactMapInstance.remove();
+    }
+
     const latitude = 40.2137;
     const longitude = 28.9884;
 
-    const map = L.map("contactMap").setView([latitude, longitude], 13);
+    contactMapInstance = L.map("contactMap").setView([latitude, longitude], 13);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution:
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    }).addTo(contactMapInstance);
 
-    const marker = L.marker([latitude, longitude]).addTo(map);
+    const marker = L.marker([latitude, longitude]).addTo(contactMapInstance);
     marker.bindPopup("<b>Burak Yılmam</b>");
 }
 
-loadContact();
-loadContactMap();
+document.addEventListener("languageChanged", () => {
+    renderContact();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadContact();
+    loadContactMap();
+});

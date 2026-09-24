@@ -16,22 +16,65 @@
     width: 100%;
     height: 160px;
     border-radius: 18px;
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+    perspective: 1000px;
+    overflow: visible;
+}
+
+.contact-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    transform-style: preserve-3d;
+    transition: transform 0.65s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-card:hover .contact-card-inner {
+    transform: rotateY(180deg);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.contact-card-front,
+.contact-card-back {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    overflow: hidden;
     box-sizing: border-box;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
 }
 
-.contact-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+.contact-card-front {
+    transform: rotateY(0deg);
+}
+
+.contact-card-back {
+    transform: rotateY(180deg);
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.contact-card-back strong {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contact-card-back span {
+    font-size: 14px;
+    font-weight: 500;
+    word-break: break-word;
 }
 
 .contact-card i {
@@ -42,9 +85,18 @@
     transition: transform 0.3s ease;
 }
 
-.contact-phone {
+.contact-image-front {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contact-phone .contact-card-front,
+.contact-phone .contact-card-back {
     background-color: #4caf50;
-    background-image: none;
+    color: #ffffff;
 }
 
 .contact-phone i {
@@ -53,13 +105,10 @@
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
 }
 
-.contact-phone:hover i {
-    transform: scale(1.08);
-}
-
-.contact-whatsapp {
+.contact-whatsapp .contact-card-front,
+.contact-whatsapp .contact-card-back {
     background-color: #25d366;
-    background-image: none;
+    color: #ffffff;
 }
 
 .contact-whatsapp i {
@@ -68,35 +117,28 @@
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
 }
 
-.contact-whatsapp:hover i {
-    transform: scale(1.08);
-}
-
-.contact-instagram {
-    background: linear-gradient(135deg, #833ab4 0%, #c13584 35%, #fd1d1d 65%, #fcb045 100%) !important;
-    background-image: linear-gradient(135deg, #833ab4 0%, #c13584 35%, #fd1d1d 65%, #fcb045 100%) !important;
+.contact-instagram .contact-card-front,
+.contact-instagram .contact-card-back {
+    background: linear-gradient(
+        135deg,
+        #833ab4 0%,
+        #c13584 35%,
+        #fd1d1d 65%,
+        #fcb045 100%
+    );
     color: #ffffff;
 }
 
 .contact-instagram i {
-    width: auto;
-    height: auto;
-    display: block;
-    color: #ffffff !important;
-    background: none !important;
-    font-size: 58px !important;
-    line-height: 1;
+    color: #ffffff;
+    font-size: 58px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
-    transition: transform 0.3s ease;
 }
 
-.contact-instagram:hover i {
-    transform: scale(1.08);
-}
-
-.contact-facebook {
+.contact-facebook .contact-card-front,
+.contact-facebook .contact-card-back {
     background-color: #1877f2;
-    background-image: none;
+    color: #ffffff;
 }
 
 .contact-facebook i {
@@ -105,28 +147,22 @@
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
 }
 
-.contact-facebook:hover i {
-    transform: scale(1.08);
-}
-
-.contact-linkedin {
+.contact-linkedin .contact-card-front,
+.contact-linkedin .contact-card-back {
     background-color: #0a66c2;
-    background-image: none;
+    color: #ffffff;
 }
 
 .contact-linkedin i {
-    color: white;
+    color: #ffffff;
     font-size: 58px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.12));
 }
 
-.contact-linkedin:hover i {
-    transform: scale(1.08);
-}
-
-.contact-github {
+.contact-github .contact-card-front,
+.contact-github .contact-card-back {
     background-color: #24292e;
-    background-image: none;
+    color: #ffffff;
 }
 
 .contact-github i {
@@ -135,22 +171,24 @@
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
 }
 
-.contact-github:hover i {
-    transform: scale(1.08);
+.contact-outlook .contact-card-front,
+.contact-outlook .contact-card-back {
+    background-color: #ffffff;
+    color: #333333;
 }
 
-.contact-outlook {
-    background-color: #ffffff;
-    background-size: 25% auto;
-    background-position: center;
-    background-repeat: no-repeat;
+.contact-outlook .contact-image-front {
+    background-size: 17% auto;
 }
 
-.contact-gmail {
+.contact-gmail .contact-card-front,
+.contact-gmail .contact-card-back {
     background-color: #ffffff;
-    background-size: 35% auto;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: #333333;
+}
+
+.contact-gmail .contact-image-front {
+    background-size: 20% auto;
 }
 
 .contact-map-container {
@@ -185,22 +223,17 @@
     .contact-whatsapp i,
     .contact-facebook i,
     .contact-linkedin i,
-    .contact-github i {
+    .contact-github i,
+    .contact-instagram i {
         font-size: 48px;
     }
 
-    .contact-instagram i {
-        width: 48px;
-        height: 48px;
-        font-size: 26px !important;
+    .contact-outlook .contact-image-front {
+        background-size: 22% auto;
     }
 
-    .contact-outlook {
+    .contact-gmail .contact-image-front {
         background-size: 30% auto;
-    }
-
-    .contact-gmail {
-        background-size: 40% auto;
     }
 }
 
@@ -210,9 +243,14 @@
         gap: 18px;
     }
 
+    .contact-card,
+    .contact-card-front,
+    .contact-card-back {
+        border-radius: 16px;
+    }
+
     .contact-card {
         height: 105px;
-        border-radius: 16px;
     }
 
     .contact-phone i {
@@ -222,22 +260,25 @@
     .contact-whatsapp i,
     .contact-facebook i,
     .contact-linkedin i,
-    .contact-github i {
-        font-size: 45px;
-    }
-
+    .contact-github i,
     .contact-instagram i {
-        width: 45px;
-        height: 45px;
-        font-size: 25px !important;
+        font-size: 44px;
     }
 
-    .contact-outlook {
-        background-size: 35% auto;
+    .contact-outlook .contact-image-front {
+        background-size: 26% auto;
     }
 
-    .contact-gmail {
-        background-size: 45% auto;
+    .contact-gmail .contact-image-front {
+        background-size: 36% auto;
+    }
+
+    .contact-card-back strong {
+        font-size: 16px;
+    }
+
+    .contact-card-back span {
+        font-size: 13px;
     }
 }
 
@@ -262,32 +303,27 @@
 
     .contact-card {
         height: 100px;
-        border-radius: 16px;
     }
 
-    .contact-phone i {
-        font-size: 36px;
+    .contact-card-back {
+        padding: 10px;
+        gap: 6px;
     }
 
-    .contact-whatsapp i,
-    .contact-facebook i,
-    .contact-linkedin i,
-    .contact-github i {
-        font-size: 42px;
+    .contact-outlook .contact-image-front {
+        background-size: 28% auto;
     }
 
-    .contact-instagram i {
-        width: 42px;
-        height: 42px;
-        font-size: 23px !important;
+    .contact-gmail .contact-image-front {
+        background-size: 40% auto;
     }
 
-    .contact-outlook {
-        background-size: 38% auto;
+    .contact-card-back strong {
+        font-size: 15px;
     }
 
-    .contact-gmail {
-        background-size: 50% auto;
+    .contact-card-back span {
+        font-size: 12px;
     }
 }
 
@@ -298,62 +334,7 @@
     }
 }
 
-/* =====================================================
-   OUTLOOK / GMAIL ICON SIZE
-===================================================== */
-
-.contact-outlook {
-    background-size: 17% auto;
+.contact-card:hover .contact-card-inner {
+    transform: rotateY(180deg);
 }
 
-.contact-gmail {
-    background-size: 25% auto;
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 1100px) {
-
-    .contact-outlook {
-        background-size: 22% auto;
-    }
-
-    .contact-gmail {
-        background-size: 30% auto;
-    }
-}
-
-
-/* =====================================================
-   SMALL TABLET
-===================================================== */
-
-@media (max-width: 800px) {
-
-    .contact-outlook {
-        background-size: 26% auto;
-    }
-
-    .contact-gmail {
-        background-size: 36% auto;
-    }
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 550px) {
-
-    .contact-outlook {
-        background-size: 28% auto;
-    }
-
-    .contact-gmail {
-        background-size: 40% auto;
-    }
-}
