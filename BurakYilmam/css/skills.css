@@ -1,26 +1,14 @@
-/* =====================================================
-   SKILLS
-===================================================== */
-
 .skills-container {
     width: 100%;
     max-height: 500px;
-
     display: flex;
     flex-direction: column;
     gap: 16px;
-
     margin-top: 30px;
-
     overflow-y: auto;
     overflow-x: hidden;
-
     padding-right: 10px;
 }
-
-/* =====================================================
-   SCROLLBAR
-===================================================== */
 
 .skills-container::-webkit-scrollbar {
     width: 6px;
@@ -40,37 +28,24 @@
     background: #64748b;
 }
 
-
-/* =====================================================
-   SKILL ITEM
-===================================================== */
-
 .skill-item {
     width: 100%;
     flex-shrink: 0;
 }
 
-
-/* =====================================================
-   SKILL HEADER
-===================================================== */
-
 .skill-header {
     display: flex;
     align-items: center;
     gap: 10px;
-
     margin-bottom: 7px;
 }
 
 .skill-icon {
     width: 24px;
     height: 24px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 20px;
     flex-shrink: 0;
 }
@@ -88,35 +63,19 @@
     font-weight: 600;
 }
 
-
-/* =====================================================
-   SKILL BAR
-===================================================== */
-
 .skill-bar {
     width: 100%;
     height: 12px;
-
     background: #e5e7eb;
-
     border-radius: 5px;
-
     overflow: hidden;
 }
-
-
-/* =====================================================
-   SKILL PROGRESS
-===================================================== */
 
 .skill-progress {
     height: 100%;
     width: 0;
-
     background: #3b82f6;
-
     border-radius: 5px;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -126,30 +85,16 @@
     color: #ffffff;
     font-size: 9px;
     font-weight: 600;
-
     padding-right: 6px;
 }
-
-
-
-/* =====================================================
-   HOVER
-===================================================== */
 
 .skill-item:hover .skill-progress {
     background: #2563eb;
 }
 
-
-/* =====================================================
-   RESPONSIVE
-===================================================== */
-
 @media (max-width: 1024px) {
-
     .skills-container {
         max-height: 450px;
-
         gap: 15px;
         margin-top: 25px;
     }
@@ -167,14 +112,10 @@
     }
 }
 
-
 @media (max-width: 600px) {
-
     .skills-container {
         max-height: 400px;
-
         gap: 14px;
-
         padding-right: 7px;
     }
 

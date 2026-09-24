@@ -1,15 +1,4 @@
-/* =====================================================
-   TABLET
-   768px
-===================================================== */
-
 @media (max-width: 768px) {
-
-    /* -------------------------
-       SUMMARY
-       VERTICAL LAYOUT
-    ------------------------- */
-
     .summary-section {
         width: calc(100% - 30px);
         padding: 10px 15px 30px;
@@ -19,19 +8,12 @@
     .summary-container {
         width: 100%;
         min-width: 0;
-
         grid-template-columns: 1fr;
         gap: 16px;
     }
 
-
-    /* -------------------------
-       PROFILE
-    ------------------------- */
-
     .summary-profile {
         order: 1;
-
         width: 100%;
         min-width: 0;
     }
@@ -40,44 +22,30 @@
         width: 100%;
         max-width: 520px;
         height: auto;
-
         aspect-ratio: 4 / 5;
-
         margin: 0 auto;
-
         border-radius: 14px;
     }
 
-
-    /* -------------------------
-       CONTENT
-    ------------------------- */
-
     .summary-content {
         order: 2;
-
         width: 100%;
         max-width: none;
         min-width: 0;
-
         text-align: center;
     }
 
     .summary-content h1 {
         font-size: clamp(32px, 7vw, 42px);
-
         line-height: 1.1;
         margin-bottom: 9px;
-
         overflow-wrap: break-word;
     }
 
     .summary-content h2 {
         font-size: 18px;
-
         line-height: 1.4;
         margin-bottom: 18px;
-
         overflow-wrap: break-word;
     }
 
@@ -85,96 +53,55 @@
         overflow-wrap: break-word;
     }
 
-
-    /* -------------------------
-       TECHNOLOGIES
-       3 COLUMNS
-    ------------------------- */
-
     .summary-tech {
         width: 100%;
         min-width: 0;
-
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 8px;
     }
 
     .summary-tech span {
         width: 100%;
         min-width: 0;
-
         min-height: 40px;
-
         font-size: 12px;
         padding: 4px;
-
         overflow-wrap: anywhere;
         word-break: normal;
     }
 
-
-    /* -------------------------
-       CONTACT
-       4 + 4
-    ------------------------- */
-
     .contact-buttons {
         width: 100%;
         min-width: 0;
-
         display: grid;
-
-        grid-template-columns:
-            repeat(4, 50px);
-
+        grid-template-columns: repeat(4, 50px);
         gap: 10px;
-
         justify-content: center;
     }
 
     .contact-btn {
         width: 50px;
         height: 50px;
-
         font-size: 21px;
     }
 
-
-    /* -------------------------
-       CV
-    ------------------------- */
-
     .cv-btn {
         max-width: 100%;
-
         margin-left: auto;
         margin-right: auto;
-
         box-sizing: border-box;
     }
-
-
-    /* -------------------------
-       STATS
-    ------------------------- */
 
     .summary-stats {
         width: 100%;
         min-width: 0;
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
-
         margin-top: 25px;
     }
 
     .stat-card {
         min-width: 0;
-
         box-sizing: border-box;
     }
 
@@ -187,100 +114,113 @@
         overflow-wrap: anywhere;
     }
 
-
-    /* -------------------------
-       EXPERIENCE
-    ------------------------- */
-
     .experience-timeline {
+        width: 100%;
         max-width: 100%;
         max-height: 600px;
-
-        padding-right: 5px;
-
+        padding-right: 0;
+        overflow-x: hidden;
         box-sizing: border-box;
     }
 
     .experience-item {
+        width: 100%;
         min-width: 0;
-
-        grid-template-columns:
-            90px
-            30px
-            minmax(0, 1fr);
-
+        display: grid;
+        grid-template-columns: 22px minmax(0, 1fr);
         column-gap: 10px;
+        min-height: 0;
+        box-sizing: border-box;
     }
 
     .experience-date {
+        grid-column: 1 / -1;
+        width: 100%;
         min-width: 0;
+        text-align: left;
+        padding: 0 0 8px 0;
+        font-size: 12px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+        box-sizing: border-box;
+    }
 
-        font-size: 11px;
+    .experience-marker {
+        grid-column: 1;
+        grid-row: 2;
+        width: 22px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
 
-        text-align: right;
+    .experience-marker::before {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
 
-        word-break: normal;
-        overflow-wrap: break-word;
+    .experience-marker::after {
+        top: 16px;
+        bottom: -10px;
+        width: 2px;
+    }
+
+    .experience-content {
+        grid-column: 2;
+        grid-row: 2;
+        width: 100%;
+        min-width: 0;
+        padding-bottom: 30px;
+        box-sizing: border-box;
     }
 
     .experience-company {
         min-width: 0;
-
-        font-size: 14px;
-
+        font-size: 15px;
+        line-height: 1.35;
         overflow-wrap: anywhere;
+        word-break: normal;
     }
 
     .experience-position {
         min-width: 0;
-
-        font-size: 12px;
-
+        font-size: 13px;
+        line-height: 1.4;
         overflow-wrap: anywhere;
+        word-break: normal;
     }
 
     .experience-description {
+        width: 100%;
         min-width: 0;
-
-        font-size: 12px;
-
-        line-height: 1.5;
-
+        margin: 7px 0 0;
         padding-left: 16px;
-
+        font-size: 13px;
+        line-height: 1.55;
         overflow-wrap: anywhere;
+        word-break: normal;
+        box-sizing: border-box;
+    }
+
+    .experience-description li {
+        margin-bottom: 4px;
     }
 }
 
-
-/* =====================================================
-   MOBILE
-   600px
-===================================================== */
-
 @media (max-width: 600px) {
-
     .summary-section {
         width: calc(100% - 20px);
-
         padding: 8px 10px 30px;
-
         border-radius: 10px;
-
         box-sizing: border-box;
     }
 
     .summary-container {
         width: 100%;
         min-width: 0;
-
         gap: 14px;
     }
-
-
-    /* -------------------------
-       PROFILE
-    ------------------------- */
 
     .summary-profile {
         width: 100%;
@@ -290,74 +230,45 @@
     .profile-image {
         width: 100%;
         max-width: 420px;
-
         height: auto;
-
         aspect-ratio: 4 / 5;
-
         border-radius: 12px;
     }
-
-
-    /* -------------------------
-       CONTENT
-    ------------------------- */
 
     .summary-content {
         width: 100%;
         max-width: 100%;
         min-width: 0;
-
         text-align: center;
     }
 
     .summary-content h1 {
-        font-size:
-            clamp(29px, 8vw, 38px);
-
+        font-size: clamp(29px, 8vw, 38px);
         line-height: 1.1;
-
         margin-bottom: 9px;
-
         letter-spacing: -0.5px;
-
         overflow-wrap: break-word;
     }
 
     .summary-content h2 {
         font-size: 17px;
-
         line-height: 1.4;
-
         margin-bottom: 18px;
-
         overflow-wrap: break-word;
     }
 
     .summary-content p {
         font-size: 14px;
-
         line-height: 1.65;
-
         margin-bottom: 13px;
-
         overflow-wrap: anywhere;
     }
-
-
-    /* -------------------------
-       TECHNOLOGIES
-    ------------------------- */
 
     .summary-tech {
         width: 100%;
         min-width: 0;
-
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 7px;
-
         margin-top: 18px;
         margin-bottom: 20px;
     }
@@ -365,95 +276,56 @@
     .summary-tech span {
         width: 100%;
         min-width: 0;
-
         min-height: 40px;
-
         font-size: 12px;
-
         padding: 4px 5px;
-
         overflow-wrap: anywhere;
         word-break: normal;
-
         box-sizing: border-box;
     }
-
-
-    /* -------------------------
-       CONTACT
-       4 + 4
-    ------------------------- */
 
     .contact-buttons {
         width: 100%;
         min-width: 0;
-
         display: grid;
-
-        grid-template-columns:
-            repeat(4, 46px);
-
+        grid-template-columns: repeat(4, 46px);
         gap: 8px;
-
         justify-content: center;
     }
 
     .contact-btn {
         width: 46px;
         height: 46px;
-
         font-size: 19px;
     }
 
-
-    /* -------------------------
-       CV
-    ------------------------- */
-
     .cv-btn {
         max-width: 100%;
-
         box-sizing: border-box;
-
         margin-left: auto;
         margin-right: auto;
     }
 
-
-    /* -------------------------
-       STATS
-    ------------------------- */
-
     .summary-stats {
         width: 100%;
         min-width: 0;
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 8px;
-
         margin-top: 22px;
     }
 
     .stat-card {
         min-width: 0;
-
         padding: 13px;
-
         justify-content: center;
-
         gap: 10px;
-
         box-sizing: border-box;
     }
 
     .stat-card > i {
         width: 36px;
         height: 36px;
-
         font-size: 16px;
-
         flex-shrink: 0;
     }
 
@@ -463,121 +335,74 @@
 
     .stat-card strong {
         font-size: 19px;
-
         overflow-wrap: anywhere;
     }
 
     .stat-card span {
         font-size: 11px;
-
         overflow-wrap: anywhere;
     }
-
-
-    /* -------------------------
-       EXPERIENCE
-    ------------------------- */
 
     .experience-timeline {
         width: 100%;
         max-width: 100%;
-
         box-sizing: border-box;
-
         overflow-x: hidden;
     }
 
     .experience-item {
         min-width: 0;
-
-        grid-template-columns:
-            75px
-            24px
-            minmax(0, 1fr);
-
+        grid-template-columns: 75px 24px minmax(0, 1fr);
         column-gap: 8px;
     }
 
     .experience-date {
         min-width: 0;
-
         font-size: 10px;
-
         overflow-wrap: break-word;
     }
 
     .experience-company {
         min-width: 0;
-
         font-size: 13px;
-
         overflow-wrap: anywhere;
     }
 
     .experience-position {
         min-width: 0;
-
         font-size: 11px;
-
         overflow-wrap: anywhere;
     }
 
     .experience-description {
         min-width: 0;
-
         font-size: 11px;
-
         line-height: 1.5;
-
         padding-left: 10px;
-
         overflow-wrap: anywhere;
     }
 }
 
-
-/* =====================================================
-   SMALL MOBILE
-   425px
-===================================================== */
-
 @media (max-width: 425px) {
-
     .summary-section {
         width: calc(100% - 16px);
-
         padding: 6px 8px 25px;
-
         box-sizing: border-box;
     }
 
     .summary-container {
         width: 100%;
         min-width: 0;
-
         gap: 12px;
     }
-
-
-    /* -------------------------
-       PROFILE
-    ------------------------- */
 
     .profile-image {
         width: 100%;
         max-width: 360px;
-
         height: 300px;
-
         aspect-ratio: auto;
-
         border-radius: 10px;
     }
-
-
-    /* -------------------------
-       CONTENT
-    ------------------------- */
 
     .summary-content {
         width: 100%;
@@ -586,121 +411,73 @@
 
     .summary-content h1 {
         max-width: 100%;
-
         font-size: 29px;
-
         line-height: 1.08;
-
         overflow-wrap: break-word;
     }
 
     .summary-content h2 {
         font-size: 16px;
-
         overflow-wrap: break-word;
     }
 
     .summary-content p {
         font-size: 13px;
-
         line-height: 1.6;
-
         overflow-wrap: anywhere;
     }
-
-
-    /* -------------------------
-       TECHNOLOGIES
-    ------------------------- */
 
     .summary-tech {
         width: 100%;
         min-width: 0;
-
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 6px;
     }
 
     .summary-tech span {
         width: 100%;
         min-width: 0;
-
         min-height: 38px;
-
         font-size: 11px;
-
         padding: 3px;
-
         overflow-wrap: anywhere;
-
         box-sizing: border-box;
     }
 
-
-    /* -------------------------
-       CONTACT
-       4 + 4
-    ------------------------- */
-
     .contact-buttons {
         width: 100%;
-
-        grid-template-columns:
-            repeat(4, 42px);
-
+        grid-template-columns: repeat(4, 42px);
         gap: 6px;
     }
 
     .contact-btn {
         width: 42px;
         height: 42px;
-
         font-size: 17px;
     }
 
-
-    /* -------------------------
-       CV
-    ------------------------- */
-
     .cv-btn {
         max-width: 100%;
-
         font-size: 13px;
-
         padding: 10px 16px;
-
         box-sizing: border-box;
     }
-
-
-    /* -------------------------
-       STATS
-    ------------------------- */
 
     .summary-stats {
         width: 100%;
         min-width: 0;
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .stat-card {
         min-width: 0;
-
         padding: 11px;
-
         flex-direction: column;
-
         text-align: center;
     }
 
     .stat-card div {
         min-width: 0;
-
         align-items: center;
     }
 
@@ -709,17 +486,8 @@
         overflow-wrap: anywhere;
     }
 
-
-    /* -------------------------
-       EXPERIENCE
-    ------------------------- */
-
     .experience-item {
-        grid-template-columns:
-            65px
-            22px
-            minmax(0, 1fr);
-
+        grid-template-columns: 65px 22px minmax(0, 1fr);
         column-gap: 6px;
     }
 
@@ -737,31 +505,16 @@
 
     .experience-description {
         font-size: 10px;
-
         padding-left: 8px;
     }
 }
 
-
-/* =====================================================
-   EXTRA SMALL
-   350px
-===================================================== */
-
 @media (max-width: 350px) {
-
     .summary-section {
         width: calc(100% - 12px);
-
         padding: 6px;
-
         box-sizing: border-box;
     }
-
-
-    /* -------------------------
-       CONTENT
-    ------------------------- */
 
     .summary-content h1 {
         font-size: 27px;
@@ -771,62 +524,34 @@
         font-size: 15px;
     }
 
-
-    /* -------------------------
-       TECHNOLOGIES
-    ------------------------- */
-
     .summary-tech {
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 5px;
     }
 
     .summary-tech span {
         width: 100%;
         min-width: 0;
-
         font-size: 10px;
-
         min-height: 36px;
-
         padding: 2px;
-
         overflow-wrap: anywhere;
     }
 
-
-    /* -------------------------
-       CONTACT
-       4 + 4
-    ------------------------- */
-
     .contact-buttons {
         width: 100%;
-
-        grid-template-columns:
-            repeat(4, 38px);
-
+        grid-template-columns: repeat(4, 38px);
         gap: 5px;
     }
 
     .contact-btn {
         width: 38px;
         height: 38px;
-
         font-size: 16px;
     }
 
-
-    /* -------------------------
-       STATS
-    ------------------------- */
-
     .summary-stats {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 6px;
     }
 
@@ -837,7 +562,6 @@
     .stat-card > i {
         width: 32px;
         height: 32px;
-
         font-size: 14px;
     }
 
@@ -849,17 +573,8 @@
         font-size: 10px;
     }
 
-
-    /* -------------------------
-       EXPERIENCE
-    ------------------------- */
-
     .experience-item {
-        grid-template-columns:
-            55px
-            20px
-            minmax(0, 1fr);
-
+        grid-template-columns: 55px 20px minmax(0, 1fr);
         column-gap: 5px;
     }
 
@@ -877,7 +592,6 @@
 
     .experience-description {
         font-size: 9px;
-
         padding-left: 6px;
     }
 }
