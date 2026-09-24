@@ -1,151 +1,47 @@
-// =====================================================
-// EDUCATION
-// =====================================================
-
 async function loadEducation() {
-
     try {
-
-        const response =
-            await fetch("../jsons/education.json");
-
+        const response = await fetch("../jsons/education.json");
 
         if (!response.ok) {
-
-            throw new Error(
-                `education.json yüklenemedi: ${response.status}`
-            );
+            throw new Error(`education.json yüklenemedi: ${response.status}`);
         }
 
-
-        const data =
-            await response.json();
-
-
-        const educationContainer =
-            document.getElementById(
-                "educationContainer"
-            );
-
+        const data = await response.json();
+        const educationContainer = document.getElementById("educationContainer");
 
         if (!educationContainer) {
             return;
         }
 
-
-        // =================================================
-        // CURRENT LANGUAGE
-        // =================================================
-
-        const language =
-            localStorage.getItem("language") || "tr";
-
-
-        const educations =
-            data[language]?.educations;
-
+        const language = localStorage.getItem("language") || "tr";
+        const educations = data[language]?.educations;
 
         if (!Array.isArray(educations)) {
-
-            console.error(
-                "Education verisi bulunamadı:",
-                language
-            );
-
+            console.error("Education verisi bulunamadı:", language);
             return;
         }
 
-
-        // =================================================
-        // CLEAR
-        // =================================================
-
         educationContainer.innerHTML = "";
 
-
-        // =================================================
-        // CREATE EDUCATION CARDS
-        // =================================================
-
         educations.forEach(education => {
-
-            const card =
-                document.createElement("div");
-
-
-            card.className =
-                "education-card";
-
+            const card = document.createElement("div");
+            card.className = "education-card";
 
             card.innerHTML = `
-
                 <div class="education-info">
-
-                    ${
-                        education.department
-                            ? `
-                                <h3>
-                                    ${education.department}
-                                </h3>
-                              `
-                            : ""
-                    }
-
-                    <h4>
-                        ${education.school}
-                    </h4>
-
+                    ${education.department ? `<h3>${education.department}</h3>` : ""}
+                    <h4>${education.school}</h4>
                 </div>
-
-
-                <span class="education-date">
-                    ${education.date}
-                </span>
-
-
-                ${
-                    education.gpa
-                        ? `
-                            <p class="education-gpa">
-                                GPA: ${education.gpa}
-                            </p>
-                          `
-                        : ""
-                }
-
+                <span class="education-date">${education.date}</span>
+                ${education.gpa ? `<p class="education-gpa">GPA: ${education.gpa}</p>` : ""}
             `;
 
-
             educationContainer.appendChild(card);
-
         });
-
-    }
-    catch (error) {
-
-        console.error(
-            "Education verileri yüklenirken hata oluştu:",
-            error
-        );
+    } catch (error) {
+        console.error("Education verileri yüklenirken hata oluştu:", error);
     }
 }
 
-
-// =====================================================
-// INITIAL LOAD
-// =====================================================
-
-document.addEventListener(
-    "DOMContentLoaded",
-    loadEducation
-);
-
-
-// =====================================================
-// LANGUAGE CHANGE
-// =====================================================
-
-document.addEventListener(
-    "languageChanged",
-    loadEducation
-);
+document.addEventListener("DOMContentLoaded", loadEducation);
+document.addEventListener("languageChanged", loadEducation);

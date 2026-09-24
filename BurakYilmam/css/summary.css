@@ -202,10 +202,6 @@
 
     transition: all 0.2s ease;
 
-    /*
-       Kelimeleri harf harf parçalama.
-       Sığmayan kutu aşağı satıra geçsin.
-    */
     word-break: normal;
     overflow-wrap: normal;
 }
