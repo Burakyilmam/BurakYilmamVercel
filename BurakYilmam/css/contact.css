@@ -14,7 +14,7 @@
 .contact-card {
     position: relative;
     width: 100%;
-    height: 230px;
+    height: 160px;
     border-radius: 18px;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@
 
 .contact-phone i {
     color: #ffffff;
-    font-size: 70px;
+    font-size: 48px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
 }
 
@@ -64,7 +64,7 @@
 
 .contact-whatsapp i {
     color: #ffffff;
-    font-size: 90px;
+    font-size: 58px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
 }
 
@@ -84,7 +84,7 @@
     display: block;
     color: #ffffff !important;
     background: none !important;
-    font-size: 90px !important;
+    font-size: 58px !important;
     line-height: 1;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
     transition: transform 0.3s ease;
@@ -101,7 +101,7 @@
 
 .contact-facebook i {
     color: #ffffff;
-    font-size: 90px;
+    font-size: 58px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.18));
 }
 
@@ -116,7 +116,7 @@
 
 .contact-linkedin i {
     color: white;
-    font-size: 90px;
+    font-size: 58px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.12));
 }
 
@@ -131,7 +131,7 @@
 
 .contact-github i {
     color: #ffffff;
-    font-size: 90px;
+    font-size: 58px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
 }
 
@@ -140,112 +140,17 @@
 }
 
 .contact-outlook {
-    background-color: white;
-    background-size: 35% auto;
+    background-color: #ffffff;
+    background-size: 25% auto;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .contact-gmail {
     background-color: #ffffff;
-    background-size: 45% auto;
+    background-size: 35% auto;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-@media (max-width: 1100px) {
-    .contact-container {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 22px;
-    }
-
-    .contact-card {
-        height: 220px;
-    }
-
-    .contact-phone i {
-        font-size: 66px;
-    }
-
-    .contact-whatsapp i,
-    .contact-facebook i,
-    .contact-linkedin i,
-    .contact-github i {
-        font-size: 82px;
-    }
-
-    .contact-instagram i {
-        width: 82px;
-        height: 82px;
-        font-size: 44px;
-    }
-}
-
-@media (max-width: 800px) {
-    .contact-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
-    }
-
-    .contact-card {
-        height: 210px;
-        border-radius: 16px;
-    }
-
-    .contact-phone i {
-        font-size: 64px;
-    }
-
-    .contact-whatsapp i,
-    .contact-facebook i,
-    .contact-linkedin i,
-    .contact-github i {
-        font-size: 78px;
-    }
-
-    .contact-instagram i {
-        width: 78px;
-        height: 78px;
-        font-size: 42px;
-    }
-}
-
-@media (max-width: 550px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        margin-top: 20px;
-    }
-
-    .contact-card {
-        height: 200px;
-        border-radius: 16px;
-    }
-
-    .contact-phone i {
-        font-size: 60px;
-    }
-
-    .contact-whatsapp i,
-    .contact-facebook i,
-    .contact-linkedin i,
-    .contact-github i {
-        font-size: 72px;
-    }
-
-    .contact-instagram i {
-        width: 72px;
-        height: 72px;
-        font-size: 38px;
-    }
-
-    .contact-outlook {
-        background-size: 65% auto;
-    }
-
-    .contact-gmail {
-        background-size: 100% auto;
-    }
 }
 
 .contact-map-container {
@@ -263,6 +168,79 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
+@media (max-width: 1100px) {
+    .contact-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .contact-card {
+        height: 110px;
+    }
+
+    .contact-phone i {
+        font-size: 40px;
+    }
+
+    .contact-whatsapp i,
+    .contact-facebook i,
+    .contact-linkedin i,
+    .contact-github i {
+        font-size: 48px;
+    }
+
+    .contact-instagram i {
+        width: 48px;
+        height: 48px;
+        font-size: 26px !important;
+    }
+
+    .contact-outlook {
+        background-size: 30% auto;
+    }
+
+    .contact-gmail {
+        background-size: 40% auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .contact-card {
+        height: 105px;
+        border-radius: 16px;
+    }
+
+    .contact-phone i {
+        font-size: 38px;
+    }
+
+    .contact-whatsapp i,
+    .contact-facebook i,
+    .contact-linkedin i,
+    .contact-github i {
+        font-size: 45px;
+    }
+
+    .contact-instagram i {
+        width: 45px;
+        height: 45px;
+        font-size: 25px !important;
+    }
+
+    .contact-outlook {
+        background-size: 35% auto;
+    }
+
+    .contact-gmail {
+        background-size: 45% auto;
+    }
+}
+
 @media (max-width: 768px) {
     .contact-map-container {
         margin-top: 25px;
@@ -275,9 +253,107 @@
     }
 }
 
+@media (max-width: 550px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .contact-card {
+        height: 100px;
+        border-radius: 16px;
+    }
+
+    .contact-phone i {
+        font-size: 36px;
+    }
+
+    .contact-whatsapp i,
+    .contact-facebook i,
+    .contact-linkedin i,
+    .contact-github i {
+        font-size: 42px;
+    }
+
+    .contact-instagram i {
+        width: 42px;
+        height: 42px;
+        font-size: 23px !important;
+    }
+
+    .contact-outlook {
+        background-size: 38% auto;
+    }
+
+    .contact-gmail {
+        background-size: 50% auto;
+    }
+}
+
 @media (max-width: 480px) {
     #contactMap {
         height: 250px;
         border-radius: 12px;
+    }
+}
+
+/* =====================================================
+   OUTLOOK / GMAIL ICON SIZE
+===================================================== */
+
+.contact-outlook {
+    background-size: 17% auto;
+}
+
+.contact-gmail {
+    background-size: 25% auto;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .contact-outlook {
+        background-size: 22% auto;
+    }
+
+    .contact-gmail {
+        background-size: 30% auto;
+    }
+}
+
+
+/* =====================================================
+   SMALL TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .contact-outlook {
+        background-size: 26% auto;
+    }
+
+    .contact-gmail {
+        background-size: 36% auto;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .contact-outlook {
+        background-size: 28% auto;
+    }
+
+    .contact-gmail {
+        background-size: 40% auto;
     }
 }
